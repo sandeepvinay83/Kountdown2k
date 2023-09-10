@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C11C2FBE2AADB7AB00F72733 /* OverrideExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */; };
+		C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBF2AADBBF800F72733 /* Constants.swift */; };
+		C11C2FC32AADBF2400F72733 /* kindergartenJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C11C2FC12AADBF2400F72733 /* kindergartenJson_English.json */; };
+		C11C2FC42AADBF2400F72733 /* kindergartenJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C11C2FC22AADBF2400F72733 /* kindergartenJson_Spanish.json */; };
+		C14680C72AA5FF06007852DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680C62AA5FF06007852DF /* AppDelegate.swift */; };
+		C14680C92AA5FF06007852DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680C82AA5FF06007852DF /* SceneDelegate.swift */; };
+		C14680CB2AA5FF06007852DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680CA2AA5FF06007852DF /* ViewController.swift */; };
+		C14680CE2AA5FF06007852DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14680CC2AA5FF06007852DF /* Main.storyboard */; };
+		C14680D02AA5FF08007852DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14680CF2AA5FF08007852DF /* Assets.xcassets */; };
+		C14680D32AA5FF08007852DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14680D12AA5FF08007852DF /* LaunchScreen.storyboard */; };
+		C15AE7762AA88B8C003E006A /* MainCategoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15AE7752AA88B8C003E006A /* MainCategoryTableHeaderView.swift */; };
+		C1AFE6DF2AA7442F00E28B87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AFE6DE2AA7442F00E28B87 /* HomeViewController.swift */; };
+		C1AFE6E12AA7443F00E28B87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AFE6E02AA7443F00E28B87 /* HomeView.swift */; };
+		C1BE5E902AAB918300B18473 /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E8F2AAB918300B18473 /* LocalStorageManager.swift */; };
+		C1BE5E962AAB966F00B18473 /* KindergartenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E952AAB966F00B18473 /* KindergartenModel.swift */; };
+		C1BE5E992AAB99F000B18473 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E982AAB99F000B18473 /* Networking.swift */; };
+		C1BE5E9C2AAB9A9600B18473 /* KindergartenWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E9B2AAB9A9600B18473 /* KindergartenWebservice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideExtensions.swift; sourceTree = "<group>"; };
+		C11C2FBF2AADBBF800F72733 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C11C2FC12AADBF2400F72733 /* kindergartenJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kindergartenJson_English.json; sourceTree = "<group>"; };
+		C11C2FC22AADBF2400F72733 /* kindergartenJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kindergartenJson_Spanish.json; sourceTree = "<group>"; };
+		C14680C32AA5FF06007852DF /* Kindergarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindergarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14680C62AA5FF06007852DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C14680C82AA5FF06007852DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C14680CA2AA5FF06007852DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C14680CD2AA5FF06007852DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C14680CF2AA5FF08007852DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C14680D22AA5FF08007852DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C14680D42AA5FF08007852DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15AE7752AA88B8C003E006A /* MainCategoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategoryTableHeaderView.swift; sourceTree = "<group>"; };
+		C1AFE6DE2AA7442F00E28B87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C1AFE6E02AA7443F00E28B87 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C1BE5E8F2AAB918300B18473 /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		C1BE5E952AAB966F00B18473 /* KindergartenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenModel.swift; sourceTree = "<group>"; };
+		C1BE5E982AAB99F000B18473 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		C1BE5E9B2AAB9A9600B18473 /* KindergartenWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenWebservice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C14680C02AA5FF06007852DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C14680BA2AA5FF06007852DF = {
+			isa = PBXGroup;
+			children = (
+				C14680C52AA5FF06007852DF /* Kindergarten */,
+				C14680C42AA5FF06007852DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C14680C42AA5FF06007852DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C14680C32AA5FF06007852DF /* Kindergarten.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C14680C52AA5FF06007852DF /* Kindergarten */ = {
+			isa = PBXGroup;
+			children = (
+				C1BE5E942AAB963F00B18473 /* Model */,
+				C14680DC2AA60A8D007852DF /* ViewModel */,
+				C14680DB2AA60A81007852DF /* ViewController */,
+				C14680DA2AA60A77007852DF /* View */,
+				C1BE5E8E2AAB916C00B18473 /* Helper */,
+				C1BE5E912AAB924000B18473 /* StaticJson */,
+				C1BE5E972AAB99D100B18473 /* Network */,
+				C1BE5E9A2AAB9A7000B18473 /* Webservice */,
+				C14680C62AA5FF06007852DF /* AppDelegate.swift */,
+				C14680C82AA5FF06007852DF /* SceneDelegate.swift */,
+				C14680CA2AA5FF06007852DF /* ViewController.swift */,
+				C14680CC2AA5FF06007852DF /* Main.storyboard */,
+				C14680CF2AA5FF08007852DF /* Assets.xcassets */,
+				C14680D12AA5FF08007852DF /* LaunchScreen.storyboard */,
+				C14680D42AA5FF08007852DF /* Info.plist */,
+			);
+			path = Kindergarten;
+			sourceTree = "<group>";
+		};
+		C14680DA2AA60A77007852DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFE6E02AA7443F00E28B87 /* HomeView.swift */,
+				C15AE7752AA88B8C003E006A /* MainCategoryTableHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C14680DB2AA60A81007852DF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1AFE6DE2AA7442F00E28B87 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C14680DC2AA60A8D007852DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1BE5E8E2AAB916C00B18473 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C1BE5E8F2AAB918300B18473 /* LocalStorageManager.swift */,
+				C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */,
+				C11C2FBF2AADBBF800F72733 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C1BE5E912AAB924000B18473 /* StaticJson */ = {
+			isa = PBXGroup;
+			children = (
+				C11C2FC12AADBF2400F72733 /* kindergartenJson_English.json */,
+				C11C2FC22AADBF2400F72733 /* kindergartenJson_Spanish.json */,
+			);
+			path = StaticJson;
+			sourceTree = "<group>";
+		};
+		C1BE5E942AAB963F00B18473 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1BE5E952AAB966F00B18473 /* KindergartenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1BE5E972AAB99D100B18473 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C1BE5E982AAB99F000B18473 /* Networking.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C1BE5E9A2AAB9A7000B18473 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				C1BE5E9B2AAB9A9600B18473 /* KindergartenWebservice.swift */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C14680C22AA5FF06007852DF /* Kindergarten */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14680D72AA5FF08007852DF /* Build configuration list for PBXNativeTarget "Kindergarten" */;
+			buildPhases = (
+				C14680BF2AA5FF06007852DF /* Sources */,
+				C14680C02AA5FF06007852DF /* Frameworks */,
+				C14680C12AA5FF06007852DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kindergarten;
+			productName = Kindergarten;
+			productReference = C14680C32AA5FF06007852DF /* Kindergarten.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C14680BB2AA5FF06007852DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C14680C22AA5FF06007852DF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C14680BE2AA5FF06007852DF /* Build configuration list for PBXProject "Kindergarten" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C14680BA2AA5FF06007852DF;
+			productRefGroup = C14680C42AA5FF06007852DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C14680C22AA5FF06007852DF /* Kindergarten */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C14680C12AA5FF06007852DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11C2FC42AADBF2400F72733 /* kindergartenJson_Spanish.json in Resources */,
+				C14680D32AA5FF08007852DF /* LaunchScreen.storyboard in Resources */,
+				C14680D02AA5FF08007852DF /* Assets.xcassets in Resources */,
+				C11C2FC32AADBF2400F72733 /* kindergartenJson_English.json in Resources */,
+				C14680CE2AA5FF06007852DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C14680BF2AA5FF06007852DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14680CB2AA5FF06007852DF /* ViewController.swift in Sources */,
+				C1BE5E962AAB966F00B18473 /* KindergartenModel.swift in Sources */,
+				C14680C72AA5FF06007852DF /* AppDelegate.swift in Sources */,
+				C11C2FBE2AADB7AB00F72733 /* OverrideExtensions.swift in Sources */,
+				C1BE5E992AAB99F000B18473 /* Networking.swift in Sources */,
+				C14680C92AA5FF06007852DF /* SceneDelegate.swift in Sources */,
+				C1AFE6E12AA7443F00E28B87 /* HomeView.swift in Sources */,
+				C1BE5E9C2AAB9A9600B18473 /* KindergartenWebservice.swift in Sources */,
+				C1AFE6DF2AA7442F00E28B87 /* HomeViewController.swift in Sources */,
+				C15AE7762AA88B8C003E006A /* MainCategoryTableHeaderView.swift in Sources */,
+				C1BE5E902AAB918300B18473 /* LocalStorageManager.swift in Sources */,
+				C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C14680CC2AA5FF06007852DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C14680CD2AA5FF06007852DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C14680D12AA5FF08007852DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C14680D22AA5FF08007852DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C14680D52AA5FF08007852DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C14680D62AA5FF08007852DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C14680D82AA5FF08007852DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kindergarten/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.Kindergarten;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C14680D92AA5FF08007852DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kindergarten/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.Kindergarten;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C14680BE2AA5FF06007852DF /* Build configuration list for PBXProject "Kindergarten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14680D52AA5FF08007852DF /* Debug */,
+				C14680D62AA5FF08007852DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C14680D72AA5FF08007852DF /* Build configuration list for PBXNativeTarget "Kindergarten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14680D82AA5FF08007852DF /* Debug */,
+				C14680D92AA5FF08007852DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C14680BB2AA5FF06007852DF /* Project object */;
+}

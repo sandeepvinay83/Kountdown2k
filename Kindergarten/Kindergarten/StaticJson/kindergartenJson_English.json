@@ -1,0 +1,32 @@
+{
+  "MainCategory": [
+    {
+      "Name": "General Knowledge and Mathematics",
+      "Values": [
+        "Sorts and classifies objects",
+        "Notices similarities and differences",
+        "Identifies Basic Colors",
+        "Counts in a sequence up to 30",
+        "Counts sets of objects up to 10"
+      ]
+    },
+    {
+      "Name": "Language and Communication Development",
+      "Values": [
+        "Speaks in five to six word sentences",
+        "Knows own full name",
+        "Knows home address, phone number and birthday",
+        "Word and Picture Sort",
+        "Counts sets of objects up to 10"
+      ]
+    },
+    {
+      "Name": "Social and Emotional Development",
+      "Values": [
+        "Plays and shares with other children",
+        "Follows simple rules and routines",
+        "Expresses own needs and wants"
+      ]
+    }
+  ]
+}
