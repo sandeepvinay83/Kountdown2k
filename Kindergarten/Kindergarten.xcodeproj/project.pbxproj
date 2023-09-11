@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		319D70622AAEAC6500CAC5D8 /* ClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D70612AAEAC6500CAC5D8 /* ClassificationViewController.swift */; };
 		C11C2FBE2AADB7AB00F72733 /* OverrideExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */; };
 		C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBF2AADBBF800F72733 /* Constants.swift */; };
 		C11C2FC32AADBF2400F72733 /* kindergartenJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C11C2FC12AADBF2400F72733 /* kindergartenJson_English.json */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		319D70612AAEAC6500CAC5D8 /* ClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationViewController.swift; sourceTree = "<group>"; };
 		C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideExtensions.swift; sourceTree = "<group>"; };
 		C11C2FBF2AADBBF800F72733 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C11C2FC12AADBF2400F72733 /* kindergartenJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kindergartenJson_English.json; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				C1AFE6DE2AA7442F00E28B87 /* HomeViewController.swift */,
+				319D70612AAEAC6500CAC5D8 /* ClassificationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				C1AFE6E12AA7443F00E28B87 /* HomeView.swift in Sources */,
 				C1BE5E9C2AAB9A9600B18473 /* KindergartenWebservice.swift in Sources */,
 				C1AFE6DF2AA7442F00E28B87 /* HomeViewController.swift in Sources */,
+				319D70622AAEAC6500CAC5D8 /* ClassificationViewController.swift in Sources */,
 				C15AE7762AA88B8C003E006A /* MainCategoryTableHeaderView.swift in Sources */,
 				C1BE5E902AAB918300B18473 /* LocalStorageManager.swift in Sources */,
 				C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */,
