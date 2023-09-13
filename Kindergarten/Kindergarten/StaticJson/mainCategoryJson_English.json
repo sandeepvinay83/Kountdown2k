@@ -1,8 +1,8 @@
 {
   "MainCategory": [
     {
-      "Name": "General Knowledge and Mathematics",
-      "Values": [
+      "name": "General Knowledge and Mathematics",
+      "values": [
         "Sorts and classifies objects",
         "Notices similarities and differences",
         "Identifies Basic Colors",
@@ -11,8 +11,8 @@
       ]
     },
     {
-      "Name": "Language and Communication Development",
-      "Values": [
+      "name": "Language and Communication Development",
+      "values": [
         "Speaks in five to six word sentences",
         "Knows own full name",
         "Knows home address, phone number and birthday",
@@ -21,8 +21,8 @@
       ]
     },
     {
-      "Name": "Social and Emotional Development",
-      "Values": [
+      "name": "Social and Emotional Development",
+      "values": [
         "Plays and shares with other children",
         "Follows simple rules and routines",
         "Expresses own needs and wants"

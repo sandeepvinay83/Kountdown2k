@@ -1,0 +1,134 @@
+{
+  "Classify": [
+    {
+      "title": "Vehicle",
+      "header": "Classify Vehicles",
+      "options": [
+        {
+          "imageName": "car",
+          "answer": "1"
+        },
+        {
+          "imageName": "truck",
+          "answer": "1"
+        },
+        {
+          "imageName": "banana",
+          "answer": "0"
+        },
+        {
+          "imageName": "bus",
+          "answer": "1"
+        },
+        {
+          "imageName": "boy",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "Fruits",
+      "header": "Classify Fruits",
+      "options": [
+        {
+          "imageName": "van",
+          "answer": "0"
+        },
+        {
+          "imageName": "apple",
+          "answer": "1"
+        },
+        {
+          "imageName": "banana",
+          "answer": "1"
+        },
+        {
+          "imageName": "bus",
+          "answer": "0"
+        },
+        {
+          "imageName": "pineTree",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "Animals",
+      "header": "Classify Animals",
+      "options": [
+        {
+          "imageName": "tiger",
+          "answer": "1"
+        },
+        {
+          "imageName": "truck",
+          "answer": "0"
+        },
+        {
+          "imageName": "banana",
+          "answer": "0"
+        },
+        {
+          "imageName": "gorilla",
+          "answer": "1"
+        },
+        {
+          "imageName": "boy",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "Flowers",
+      "header": "Classify Flowers",
+      "options": [
+        {
+          "imageName": "van",
+          "answer": "0"
+        },
+        {
+          "imageName": "rose",
+          "answer": "1"
+        },
+        {
+          "imageName": "lavender",
+          "answer": "1"
+        },
+        {
+          "imageName": "tiger",
+          "answer": "0"
+        },
+        {
+          "imageName": "pineTree",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "Trees",
+      "header": "Classify Trees",
+      "options": [
+        {
+          "imageName": "apple",
+          "answer": "0"
+        },
+        {
+          "imageName": "rose",
+          "answer": "0"
+        },
+        {
+          "imageName": "banyanTree",
+          "answer": "1"
+        },
+        {
+          "imageName": "banana",
+          "answer": "0"
+        },
+        {
+          "imageName": "pineTree",
+          "answer": "1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "MainCategory": [
     {
-      "Name": "Conocimientos generales y matemáticas.",
-      "Values": [
+      "name": "Conocimientos generales y matemáticas.",
+      "values": [
         "Ordena y clasifica objetos",
         "Observa similitudes y diferencias.",
         "Identifica colores básicos",
@@ -11,8 +11,8 @@
       ]
     },
     {
-      "Name": "Desarrollo del lenguaje y la comunicación",
-      "Values": [
+      "name": "Desarrollo del lenguaje y la comunicación",
+      "values": [
         "Habla en oraciones de cinco a seis palabras.",
         "Sabe su propio nombre completo",
         "Sabe la dirección de casa, el número de teléfono y la fecha de nacimiento.",
@@ -21,8 +21,8 @@
       ]
     },
     {
-      "Name": "Desarrollo Social y Emocional",
-      "Values": [
+      "name": "Desarrollo Social y Emocional",
+      "values": [
         "Juega y comparte con otros niños.",
         "Sigue reglas y rutinas simples.",
         "Expresa sus propias necesidades y deseos."

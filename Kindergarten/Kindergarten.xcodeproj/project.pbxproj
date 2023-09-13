@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		319D70622AAEAC6500CAC5D8 /* ClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D70612AAEAC6500CAC5D8 /* ClassificationViewController.swift */; };
+		319D70622AAEAC6500CAC5D8 /* ClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D70612AAEAC6500CAC5D8 /* ClassifyViewController.swift */; };
 		C11C2FBE2AADB7AB00F72733 /* OverrideExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */; };
 		C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBF2AADBBF800F72733 /* Constants.swift */; };
-		C11C2FC32AADBF2400F72733 /* kindergartenJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C11C2FC12AADBF2400F72733 /* kindergartenJson_English.json */; };
-		C11C2FC42AADBF2400F72733 /* kindergartenJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C11C2FC22AADBF2400F72733 /* kindergartenJson_Spanish.json */; };
 		C14680C72AA5FF06007852DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680C62AA5FF06007852DF /* AppDelegate.swift */; };
 		C14680C92AA5FF06007852DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680C82AA5FF06007852DF /* SceneDelegate.swift */; };
 		C14680CB2AA5FF06007852DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680CA2AA5FF06007852DF /* ViewController.swift */; };
@@ -19,20 +17,25 @@
 		C14680D02AA5FF08007852DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14680CF2AA5FF08007852DF /* Assets.xcassets */; };
 		C14680D32AA5FF08007852DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14680D12AA5FF08007852DF /* LaunchScreen.storyboard */; };
 		C15AE7762AA88B8C003E006A /* MainCategoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15AE7752AA88B8C003E006A /* MainCategoryTableHeaderView.swift */; };
+		C18356882AB0DEF800A0BD7E /* ClassifyItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18356872AB0DEF800A0BD7E /* ClassifyItemCell.swift */; };
+		C1A8FC7B2AAF533F002940F6 /* mainCategoryJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C1A8FC782AAF533E002940F6 /* mainCategoryJson_Spanish.json */; };
+		C1A8FC7C2AAF533F002940F6 /* mainCategoryJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C1A8FC792AAF533E002940F6 /* mainCategoryJson_English.json */; };
+		C1A8FC7D2AAF533F002940F6 /* classifyJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C1A8FC7A2AAF533F002940F6 /* classifyJson_English.json */; };
+		C1A8FC7F2AAF5856002940F6 /* classifyJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C1A8FC7E2AAF5856002940F6 /* classifyJson_Spanish.json */; };
+		C1A8FC812AAF7418002940F6 /* ClassifyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A8FC802AAF7418002940F6 /* ClassifyItemViewController.swift */; };
 		C1AFE6DF2AA7442F00E28B87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AFE6DE2AA7442F00E28B87 /* HomeViewController.swift */; };
 		C1AFE6E12AA7443F00E28B87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AFE6E02AA7443F00E28B87 /* HomeView.swift */; };
 		C1BE5E902AAB918300B18473 /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E8F2AAB918300B18473 /* LocalStorageManager.swift */; };
 		C1BE5E962AAB966F00B18473 /* KindergartenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E952AAB966F00B18473 /* KindergartenModel.swift */; };
 		C1BE5E992AAB99F000B18473 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E982AAB99F000B18473 /* Networking.swift */; };
 		C1BE5E9C2AAB9A9600B18473 /* KindergartenWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E9B2AAB9A9600B18473 /* KindergartenWebservice.swift */; };
+		C1E3E77B2AB1ABA1005EE9C0 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3E77A2AB1ABA1005EE9C0 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		319D70612AAEAC6500CAC5D8 /* ClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationViewController.swift; sourceTree = "<group>"; };
+		319D70612AAEAC6500CAC5D8 /* ClassifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifyViewController.swift; sourceTree = "<group>"; };
 		C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideExtensions.swift; sourceTree = "<group>"; };
 		C11C2FBF2AADBBF800F72733 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		C11C2FC12AADBF2400F72733 /* kindergartenJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kindergartenJson_English.json; sourceTree = "<group>"; };
-		C11C2FC22AADBF2400F72733 /* kindergartenJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kindergartenJson_Spanish.json; sourceTree = "<group>"; };
 		C14680C32AA5FF06007852DF /* Kindergarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindergarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14680C62AA5FF06007852DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14680C82AA5FF06007852DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,12 +45,19 @@
 		C14680D22AA5FF08007852DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C14680D42AA5FF08007852DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C15AE7752AA88B8C003E006A /* MainCategoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategoryTableHeaderView.swift; sourceTree = "<group>"; };
+		C18356872AB0DEF800A0BD7E /* ClassifyItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifyItemCell.swift; sourceTree = "<group>"; };
+		C1A8FC782AAF533E002940F6 /* mainCategoryJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mainCategoryJson_Spanish.json; sourceTree = "<group>"; };
+		C1A8FC792AAF533E002940F6 /* mainCategoryJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mainCategoryJson_English.json; sourceTree = "<group>"; };
+		C1A8FC7A2AAF533F002940F6 /* classifyJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = classifyJson_English.json; sourceTree = "<group>"; };
+		C1A8FC7E2AAF5856002940F6 /* classifyJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = classifyJson_Spanish.json; sourceTree = "<group>"; };
+		C1A8FC802AAF7418002940F6 /* ClassifyItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifyItemViewController.swift; sourceTree = "<group>"; };
 		C1AFE6DE2AA7442F00E28B87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C1AFE6E02AA7443F00E28B87 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C1BE5E8F2AAB918300B18473 /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
 		C1BE5E952AAB966F00B18473 /* KindergartenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenModel.swift; sourceTree = "<group>"; };
 		C1BE5E982AAB99F000B18473 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		C1BE5E9B2AAB9A9600B18473 /* KindergartenWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenWebservice.swift; sourceTree = "<group>"; };
+		C1E3E77A2AB1ABA1005EE9C0 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,7 @@
 		C14680DA2AA60A77007852DF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C18356862AB0DDB800A0BD7E /* Cells */,
 				C1AFE6E02AA7443F00E28B87 /* HomeView.swift */,
 				C15AE7752AA88B8C003E006A /* MainCategoryTableHeaderView.swift */,
 			);
@@ -112,7 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				C1AFE6DE2AA7442F00E28B87 /* HomeViewController.swift */,
-				319D70612AAEAC6500CAC5D8 /* ClassificationViewController.swift */,
+				319D70612AAEAC6500CAC5D8 /* ClassifyViewController.swift */,
+				C1A8FC802AAF7418002940F6 /* ClassifyItemViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -124,12 +136,21 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		C18356862AB0DDB800A0BD7E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C18356872AB0DEF800A0BD7E /* ClassifyItemCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C1BE5E8E2AAB916C00B18473 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				C1BE5E8F2AAB918300B18473 /* LocalStorageManager.swift */,
 				C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */,
 				C11C2FBF2AADBBF800F72733 /* Constants.swift */,
+				C1E3E77A2AB1ABA1005EE9C0 /* AlertView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -137,8 +158,10 @@
 		C1BE5E912AAB924000B18473 /* StaticJson */ = {
 			isa = PBXGroup;
 			children = (
-				C11C2FC12AADBF2400F72733 /* kindergartenJson_English.json */,
-				C11C2FC22AADBF2400F72733 /* kindergartenJson_Spanish.json */,
+				C1A8FC7E2AAF5856002940F6 /* classifyJson_Spanish.json */,
+				C1A8FC7A2AAF533F002940F6 /* classifyJson_English.json */,
+				C1A8FC792AAF533E002940F6 /* mainCategoryJson_English.json */,
+				C1A8FC782AAF533E002940F6 /* mainCategoryJson_Spanish.json */,
 			);
 			path = StaticJson;
 			sourceTree = "<group>";
@@ -225,11 +248,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C11C2FC42AADBF2400F72733 /* kindergartenJson_Spanish.json in Resources */,
 				C14680D32AA5FF08007852DF /* LaunchScreen.storyboard in Resources */,
 				C14680D02AA5FF08007852DF /* Assets.xcassets in Resources */,
-				C11C2FC32AADBF2400F72733 /* kindergartenJson_English.json in Resources */,
+				C1A8FC7C2AAF533F002940F6 /* mainCategoryJson_English.json in Resources */,
+				C1A8FC7F2AAF5856002940F6 /* classifyJson_Spanish.json in Resources */,
 				C14680CE2AA5FF06007852DF /* Main.storyboard in Resources */,
+				C1A8FC7D2AAF533F002940F6 /* classifyJson_English.json in Resources */,
+				C1A8FC7B2AAF533F002940F6 /* mainCategoryJson_Spanish.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,13 +270,16 @@
 				C14680C72AA5FF06007852DF /* AppDelegate.swift in Sources */,
 				C11C2FBE2AADB7AB00F72733 /* OverrideExtensions.swift in Sources */,
 				C1BE5E992AAB99F000B18473 /* Networking.swift in Sources */,
+				C18356882AB0DEF800A0BD7E /* ClassifyItemCell.swift in Sources */,
 				C14680C92AA5FF06007852DF /* SceneDelegate.swift in Sources */,
 				C1AFE6E12AA7443F00E28B87 /* HomeView.swift in Sources */,
 				C1BE5E9C2AAB9A9600B18473 /* KindergartenWebservice.swift in Sources */,
 				C1AFE6DF2AA7442F00E28B87 /* HomeViewController.swift in Sources */,
-				319D70622AAEAC6500CAC5D8 /* ClassificationViewController.swift in Sources */,
+				319D70622AAEAC6500CAC5D8 /* ClassifyViewController.swift in Sources */,
 				C15AE7762AA88B8C003E006A /* MainCategoryTableHeaderView.swift in Sources */,
 				C1BE5E902AAB918300B18473 /* LocalStorageManager.swift in Sources */,
+				C1E3E77B2AB1ABA1005EE9C0 /* AlertView.swift in Sources */,
+				C1A8FC812AAF7418002940F6 /* ClassifyItemViewController.swift in Sources */,
 				C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

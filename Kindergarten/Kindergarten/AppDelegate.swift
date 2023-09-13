@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        setupRootViewController()
+        LocalStorageManager.shared.selectedLanguage = Constants.kLanguageKey.eEnglish.rawValue
         return true
     }
 
@@ -36,8 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setupRootViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
         let navigationController = UINavigationController()
-//        let colorThemeService = ColorThemeWebService()
-//        colorThemeService.colorThemeApi()
         navigationController.navigationBar.tintColor = UIColor.black
         navigationController.navigationBar.barTintColor = UIColor.white
         let homeViewController = HomeViewController()

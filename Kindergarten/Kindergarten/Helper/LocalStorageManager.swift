@@ -9,8 +9,10 @@ import Foundation
 
 // files name used to save model data
 enum FileName: String {
-    case KindergartenJson_English = "kindergartenJson_English"
-    case KindergartenJson_Spanish = "kindergartenJson_Spanish"
+    case MainCategoryJson_English = "mainCategoryJson_English"
+    case MainCategoryJson_Spanish = "mainCategoryJson_Spanish"
+    case ClassifyJson_English = "classifyJson_English"
+    case ClassifyJson_Spanish = "classifyJson_Spanish"
 }
 
 final class LocalStorageManager {

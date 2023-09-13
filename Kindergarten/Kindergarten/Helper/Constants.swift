@@ -19,4 +19,10 @@ class Constants {
         case eEnglish = "en"
         case eSpanish = "es"
     }
+    
+    // segue keys
+    enum kSegueKey: String {
+        case eShowClassify = "showClassify"
+        case eShowClassifyItem = "showClassifyItem"
+    }
 }
