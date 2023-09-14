@@ -1,0 +1,108 @@
+{
+  "Difference": [
+    {
+      "title": "Medias",
+      "header": "Uno de estos calcetines no es como los demás, ¿puedes encontrar qué calcetines?",
+      "options": [
+        {
+          "imageName": "redSocks",
+          "answer": "0"
+        },
+        {
+          "imageName": "redSocks",
+          "answer": "0"
+        },
+        {
+          "imageName": "whiteSocks",
+          "answer": "1"
+        },
+        {
+          "imageName": "redSocks",
+          "answer": "0"
+        },
+        {
+          "imageName": "redSocks",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "Cucharas",
+      "header": "Una de estas cucharas no es como las demás, ¿puedes encontrar cuál cuchara?",
+      "options": [
+        {
+          "imageName": "goldSpoon",
+          "answer": "0"
+        },
+        {
+          "imageName": "silverSpoon",
+          "answer": "1"
+        },
+        {
+          "imageName": "goldSpoon",
+          "answer": "0"
+        },
+        {
+          "imageName": "goldSpoon",
+          "answer": "0"
+        },
+        {
+          "imageName": "goldSpoon",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "monedas",
+      "header": "Una de estas monedas no es como las demás, ¿puedes encontrar qué moneda?",
+      "options": [
+        {
+          "imageName": "bronzeCoin",
+          "answer": "0"
+        },
+        {
+          "imageName": "bronzeCoin",
+          "answer": "0"
+        },
+        {
+          "imageName": "bronzeCoin",
+          "answer": "0"
+        },
+        {
+          "imageName": "silverCoin",
+          "answer": "1"
+        },
+        {
+          "imageName": "bronzeCoin",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "Sillas",
+      "header": "Una de estas sillas no es como las demás, ¿puedes encontrar cuál silla?",
+      "options": [
+        {
+          "imageName": "blackChair",
+          "answer": "0"
+        },
+        {
+          "imageName": "brownChair",
+          "answer": "1"
+        },
+        {
+          "imageName": "blackChair",
+          "answer": "0"
+        },
+        {
+          "imageName": "blackChair",
+          "answer": "0"
+        },
+        {
+          "imageName": "blackChair",
+          "answer": "0"
+        }
+      ]
+    }
+  ]
+}

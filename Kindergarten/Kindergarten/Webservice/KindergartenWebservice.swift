@@ -8,6 +8,9 @@
 import Foundation
 
 final class KindergartenWebservice {
+    
+    // MARK: - Main Category
+    
     /// main category json response will be in english language
     func mainCategoryApi_English() {
         let networkService = Networking()
@@ -28,6 +31,8 @@ final class KindergartenWebservice {
         LocalStorageManager.shared.saveToLocalStorage(fileName: .MainCategoryJson_Spanish, responseObject: mainCategoryModel)
     }
     
+    // MARK: - Classify
+    
     /// classify json response will be in english language
     func classifyApi_English() {
         let networkService = Networking()
@@ -46,5 +51,27 @@ final class KindergartenWebservice {
             return
         }
         LocalStorageManager.shared.saveToLocalStorage(fileName: .ClassifyJson_Spanish, responseObject: classifyModel)
+    }
+    
+    // MARK: - Difference
+    
+    /// difference json response will be in english language
+    func differenceApi_English() {
+        let networkService = Networking()
+        guard let differenceModel: DifferenceResponseModel = networkService.loadJson(filename: FileName.DifferenceJson_English.rawValue) else {
+            print("Could not read DifferenceJson_English json")
+            return
+        }
+        LocalStorageManager.shared.saveToLocalStorage(fileName: .DifferenceJson_English, responseObject: differenceModel)
+    }
+    
+    /// difference json response will be in spanish language
+    func differenceApi_Spanish() {
+        let networkService = Networking()
+        guard let differenceModel: DifferenceResponseModel = networkService.loadJson(filename: FileName.DifferenceJson_Spanish.rawValue) else {
+            print("Could not read DifferenceJson_Spanish json")
+            return
+        }
+        LocalStorageManager.shared.saveToLocalStorage(fileName: .DifferenceJson_Spanish, responseObject: differenceModel)
     }
 }

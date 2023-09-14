@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		319D70622AAEAC6500CAC5D8 /* ClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319D70612AAEAC6500CAC5D8 /* ClassifyViewController.swift */; };
+		C100CB072AB30DA8001B621D /* differencesJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C100CB052AB30DA8001B621D /* differencesJson_English.json */; };
+		C100CB0B2AB321D3001B621D /* differencesJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C100CB0A2AB321D3001B621D /* differencesJson_Spanish.json */; };
+		C100CB0D2AB322C5001B621D /* DifferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100CB0C2AB322C5001B621D /* DifferenceViewController.swift */; };
+		C100CB0F2AB33B21001B621D /* DifferenceItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100CB0E2AB33B21001B621D /* DifferenceItemViewController.swift */; };
 		C11C2FBE2AADB7AB00F72733 /* OverrideExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */; };
 		C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBF2AADBBF800F72733 /* Constants.swift */; };
 		C14680C72AA5FF06007852DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680C62AA5FF06007852DF /* AppDelegate.swift */; };
@@ -34,6 +38,10 @@
 
 /* Begin PBXFileReference section */
 		319D70612AAEAC6500CAC5D8 /* ClassifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifyViewController.swift; sourceTree = "<group>"; };
+		C100CB052AB30DA8001B621D /* differencesJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = differencesJson_English.json; sourceTree = "<group>"; };
+		C100CB0A2AB321D3001B621D /* differencesJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = differencesJson_Spanish.json; sourceTree = "<group>"; };
+		C100CB0C2AB322C5001B621D /* DifferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceViewController.swift; sourceTree = "<group>"; };
+		C100CB0E2AB33B21001B621D /* DifferenceItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceItemViewController.swift; sourceTree = "<group>"; };
 		C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideExtensions.swift; sourceTree = "<group>"; };
 		C11C2FBF2AADBBF800F72733 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C14680C32AA5FF06007852DF /* Kindergarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindergarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +133,8 @@
 				C1AFE6DE2AA7442F00E28B87 /* HomeViewController.swift */,
 				319D70612AAEAC6500CAC5D8 /* ClassifyViewController.swift */,
 				C1A8FC802AAF7418002940F6 /* ClassifyItemViewController.swift */,
+				C100CB0C2AB322C5001B621D /* DifferenceViewController.swift */,
+				C100CB0E2AB33B21001B621D /* DifferenceItemViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -158,6 +168,8 @@
 		C1BE5E912AAB924000B18473 /* StaticJson */ = {
 			isa = PBXGroup;
 			children = (
+				C100CB0A2AB321D3001B621D /* differencesJson_Spanish.json */,
+				C100CB052AB30DA8001B621D /* differencesJson_English.json */,
 				C1A8FC7E2AAF5856002940F6 /* classifyJson_Spanish.json */,
 				C1A8FC7A2AAF533F002940F6 /* classifyJson_English.json */,
 				C1A8FC792AAF533E002940F6 /* mainCategoryJson_English.json */,
@@ -250,6 +262,8 @@
 			files = (
 				C14680D32AA5FF08007852DF /* LaunchScreen.storyboard in Resources */,
 				C14680D02AA5FF08007852DF /* Assets.xcassets in Resources */,
+				C100CB0B2AB321D3001B621D /* differencesJson_Spanish.json in Resources */,
+				C100CB072AB30DA8001B621D /* differencesJson_English.json in Resources */,
 				C1A8FC7C2AAF533F002940F6 /* mainCategoryJson_English.json in Resources */,
 				C1A8FC7F2AAF5856002940F6 /* classifyJson_Spanish.json in Resources */,
 				C14680CE2AA5FF06007852DF /* Main.storyboard in Resources */,
@@ -266,10 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C14680CB2AA5FF06007852DF /* ViewController.swift in Sources */,
+				C100CB0D2AB322C5001B621D /* DifferenceViewController.swift in Sources */,
 				C1BE5E962AAB966F00B18473 /* KindergartenModel.swift in Sources */,
 				C14680C72AA5FF06007852DF /* AppDelegate.swift in Sources */,
 				C11C2FBE2AADB7AB00F72733 /* OverrideExtensions.swift in Sources */,
 				C1BE5E992AAB99F000B18473 /* Networking.swift in Sources */,
+				C100CB0F2AB33B21001B621D /* DifferenceItemViewController.swift in Sources */,
 				C18356882AB0DEF800A0BD7E /* ClassifyItemCell.swift in Sources */,
 				C14680C92AA5FF06007852DF /* SceneDelegate.swift in Sources */,
 				C1AFE6E12AA7443F00E28B87 /* HomeView.swift in Sources */,

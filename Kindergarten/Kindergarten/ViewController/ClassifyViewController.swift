@@ -13,7 +13,6 @@ enum kClassifyTexts: String {
 
 final class ClassifyViewController: UIViewController {
     @IBOutlet weak var classifyTableView: UITableView!
-    private var clickedSectionIndex = 0
     private var classifyArray: [ClassifyModel]?
 
     override func viewDidLoad() {

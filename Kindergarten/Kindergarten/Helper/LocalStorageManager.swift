@@ -13,6 +13,8 @@ enum FileName: String {
     case MainCategoryJson_Spanish = "mainCategoryJson_Spanish"
     case ClassifyJson_English = "classifyJson_English"
     case ClassifyJson_Spanish = "classifyJson_Spanish"
+    case DifferenceJson_English = "differencesJson_English"
+    case DifferenceJson_Spanish = "differencesJson_Spanish"
 }
 
 final class LocalStorageManager {

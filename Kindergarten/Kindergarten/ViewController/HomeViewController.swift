@@ -121,6 +121,8 @@ extension HomeViewController: UITableViewDelegate {
             switch indexPath.row {
             case 0:
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowClassify.rawValue, sender: nil)
+            case 1:
+                self.performSegue(withIdentifier: Constants.kSegueKey.eShowDifference.rawValue, sender: nil)
             default:
                 print("Cell not defined")
             }

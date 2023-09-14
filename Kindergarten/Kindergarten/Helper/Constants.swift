@@ -24,5 +24,7 @@ class Constants {
     enum kSegueKey: String {
         case eShowClassify = "showClassify"
         case eShowClassifyItem = "showClassifyItem"
+        case eShowDifference = "showDifference"
+        case eShowDifferenceItem = "showDifferenceItem"
     }
 }

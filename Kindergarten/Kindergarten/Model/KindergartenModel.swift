@@ -53,3 +53,12 @@ struct OptionModel: Codable {
         case answer = "answer"
     }
 }
+
+// MARK: - Difference Model
+
+struct DifferenceResponseModel: Codable {
+    var differenceArray: [ClassifyModel]
+    private enum CodingKeys: String, CodingKey {
+        case differenceArray = "Difference"
+    }
+}
