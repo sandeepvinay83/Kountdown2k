@@ -26,5 +26,7 @@ class Constants {
         case eShowClassifyItem = "showClassifyItem"
         case eShowDifference = "showDifference"
         case eShowDifferenceItem = "showDifferenceItem"
+        case eShowBasicColors = "showBasicColors"
+        case eShowIdentifyShape = "showIdentifyShape"
     }
 }

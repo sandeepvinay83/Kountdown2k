@@ -62,3 +62,21 @@ struct DifferenceResponseModel: Codable {
         case differenceArray = "Difference"
     }
 }
+
+// MARK: - Basic Colors Model
+
+struct BasicColorsResponseModel: Codable {
+    var basicColorsArray: [ClassifyModel]
+    private enum CodingKeys: String, CodingKey {
+        case basicColorsArray = "BasicColors"
+    }
+}
+
+// MARK: - Identify Shape Model
+
+struct IdentifyShapeResponseModel: Codable {
+    var identifyShapeArray: [ClassifyModel]
+    private enum CodingKeys: String, CodingKey {
+        case identifyShapeArray = "IdentifyShape"
+    }
+}

@@ -74,4 +74,48 @@ final class KindergartenWebservice {
         }
         LocalStorageManager.shared.saveToLocalStorage(fileName: .DifferenceJson_Spanish, responseObject: differenceModel)
     }
+    
+    // MARK: - Basic Colors
+    
+    /// basic colors json response will be in english language
+    func basicColorsApi_English() {
+        let networkService = Networking()
+        guard let basicColorsModel: BasicColorsResponseModel = networkService.loadJson(filename: FileName.BasicColorsJson_English.rawValue) else {
+            print("Could not read BasicColorsJson_English json")
+            return
+        }
+        LocalStorageManager.shared.saveToLocalStorage(fileName: .BasicColorsJson_English, responseObject: basicColorsModel)
+    }
+    
+    /// basic colors json response will be in spanish language
+    func basicColorsApi_Spanish() {
+        let networkService = Networking()
+        guard let basicColorsModel: BasicColorsResponseModel = networkService.loadJson(filename: FileName.BasicColorsJson_Spanish.rawValue) else {
+            print("Could not read BasicColorsJson_Spanish json")
+            return
+        }
+        LocalStorageManager.shared.saveToLocalStorage(fileName: .BasicColorsJson_Spanish, responseObject: basicColorsModel)
+    }
+    
+    // MARK: - Identify Shape
+    
+    /// identifyShape json response will be in english language
+    func identifyShapeApi_English() {
+        let networkService = Networking()
+        guard let identifyShapeModel: IdentifyShapeResponseModel = networkService.loadJson(filename: FileName.IdentifyShapeJson_English.rawValue) else {
+            print("Could not read IdentifyShapeJson_English json")
+            return
+        }
+        LocalStorageManager.shared.saveToLocalStorage(fileName: .IdentifyShapeJson_English, responseObject: identifyShapeModel)
+    }
+    
+    /// identifyShape json response will be in spanish language
+    func identifyShapeApi_Spanish() {
+        let networkService = Networking()
+        guard let identifyShapeModel: IdentifyShapeResponseModel = networkService.loadJson(filename: FileName.IdentifyShapeJson_Spanish.rawValue) else {
+            print("Could not read IdentifyShapeJson_Spanish json")
+            return
+        }
+        LocalStorageManager.shared.saveToLocalStorage(fileName: .IdentifyShapeJson_Spanish, responseObject: identifyShapeModel)
+    }
 }

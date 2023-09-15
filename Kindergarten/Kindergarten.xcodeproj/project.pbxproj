@@ -34,6 +34,12 @@
 		C1BE5E992AAB99F000B18473 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E982AAB99F000B18473 /* Networking.swift */; };
 		C1BE5E9C2AAB9A9600B18473 /* KindergartenWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E9B2AAB9A9600B18473 /* KindergartenWebservice.swift */; };
 		C1E3E77B2AB1ABA1005EE9C0 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3E77A2AB1ABA1005EE9C0 /* AlertView.swift */; };
+		C1F17B952AB3960300AA54D1 /* basicColorsJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C1F17B932AB3960300AA54D1 /* basicColorsJson_English.json */; };
+		C1F17B962AB3960300AA54D1 /* basicColorsJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C1F17B942AB3960300AA54D1 /* basicColorsJson_Spanish.json */; };
+		C1FA8B492AB4828C0068272E /* BasicColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA8B482AB4828B0068272E /* BasicColorsViewController.swift */; };
+		C1FA8B4C2AB4DA960068272E /* identifyShapeJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C1FA8B4A2AB4DA950068272E /* identifyShapeJson_Spanish.json */; };
+		C1FA8B4D2AB4DA960068272E /* identifyShapeJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C1FA8B4B2AB4DA960068272E /* identifyShapeJson_English.json */; };
+		C1FA8B4F2AB4E1E50068272E /* IdentifyShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA8B4E2AB4E1E50068272E /* IdentifyShapeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +72,12 @@
 		C1BE5E982AAB99F000B18473 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		C1BE5E9B2AAB9A9600B18473 /* KindergartenWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenWebservice.swift; sourceTree = "<group>"; };
 		C1E3E77A2AB1ABA1005EE9C0 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		C1F17B932AB3960300AA54D1 /* basicColorsJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = basicColorsJson_English.json; sourceTree = "<group>"; };
+		C1F17B942AB3960300AA54D1 /* basicColorsJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = basicColorsJson_Spanish.json; sourceTree = "<group>"; };
+		C1FA8B482AB4828B0068272E /* BasicColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicColorsViewController.swift; sourceTree = "<group>"; };
+		C1FA8B4A2AB4DA950068272E /* identifyShapeJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = identifyShapeJson_Spanish.json; sourceTree = "<group>"; };
+		C1FA8B4B2AB4DA960068272E /* identifyShapeJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = identifyShapeJson_English.json; sourceTree = "<group>"; };
+		C1FA8B4E2AB4E1E50068272E /* IdentifyShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyShapeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +147,8 @@
 				C1A8FC802AAF7418002940F6 /* ClassifyItemViewController.swift */,
 				C100CB0C2AB322C5001B621D /* DifferenceViewController.swift */,
 				C100CB0E2AB33B21001B621D /* DifferenceItemViewController.swift */,
+				C1FA8B482AB4828B0068272E /* BasicColorsViewController.swift */,
+				C1FA8B4E2AB4E1E50068272E /* IdentifyShapeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -168,6 +182,10 @@
 		C1BE5E912AAB924000B18473 /* StaticJson */ = {
 			isa = PBXGroup;
 			children = (
+				C1FA8B4B2AB4DA960068272E /* identifyShapeJson_English.json */,
+				C1FA8B4A2AB4DA950068272E /* identifyShapeJson_Spanish.json */,
+				C1F17B932AB3960300AA54D1 /* basicColorsJson_English.json */,
+				C1F17B942AB3960300AA54D1 /* basicColorsJson_Spanish.json */,
 				C100CB0A2AB321D3001B621D /* differencesJson_Spanish.json */,
 				C100CB052AB30DA8001B621D /* differencesJson_English.json */,
 				C1A8FC7E2AAF5856002940F6 /* classifyJson_Spanish.json */,
@@ -265,9 +283,13 @@
 				C100CB0B2AB321D3001B621D /* differencesJson_Spanish.json in Resources */,
 				C100CB072AB30DA8001B621D /* differencesJson_English.json in Resources */,
 				C1A8FC7C2AAF533F002940F6 /* mainCategoryJson_English.json in Resources */,
+				C1F17B952AB3960300AA54D1 /* basicColorsJson_English.json in Resources */,
 				C1A8FC7F2AAF5856002940F6 /* classifyJson_Spanish.json in Resources */,
 				C14680CE2AA5FF06007852DF /* Main.storyboard in Resources */,
+				C1F17B962AB3960300AA54D1 /* basicColorsJson_Spanish.json in Resources */,
+				C1FA8B4D2AB4DA960068272E /* identifyShapeJson_English.json in Resources */,
 				C1A8FC7D2AAF533F002940F6 /* classifyJson_English.json in Resources */,
+				C1FA8B4C2AB4DA960068272E /* identifyShapeJson_Spanish.json in Resources */,
 				C1A8FC7B2AAF533F002940F6 /* mainCategoryJson_Spanish.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +316,8 @@
 				319D70622AAEAC6500CAC5D8 /* ClassifyViewController.swift in Sources */,
 				C15AE7762AA88B8C003E006A /* MainCategoryTableHeaderView.swift in Sources */,
 				C1BE5E902AAB918300B18473 /* LocalStorageManager.swift in Sources */,
+				C1FA8B492AB4828C0068272E /* BasicColorsViewController.swift in Sources */,
+				C1FA8B4F2AB4E1E50068272E /* IdentifyShapeViewController.swift in Sources */,
 				C1E3E77B2AB1ABA1005EE9C0 /* AlertView.swift in Sources */,
 				C1A8FC812AAF7418002940F6 /* ClassifyItemViewController.swift in Sources */,
 				C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */,

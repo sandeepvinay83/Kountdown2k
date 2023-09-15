@@ -1,0 +1,134 @@
+{
+  "IdentifyShape": [
+    {
+      "title": "",
+      "header": "¿Cuál es el Triángulo?",
+      "options": [
+        {
+          "imageName": "redTriangle",
+          "answer": "1"
+        },
+        {
+          "imageName": "blueCircle",
+          "answer": "0"
+        },
+        {
+          "imageName": "greenSquare",
+          "answer": "0"
+        },
+        {
+          "imageName": "pinkArrow",
+          "answer": "0"
+        },
+        {
+          "imageName": "yellowRectangle",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuál es el círculo?",
+      "options": [
+        {
+          "imageName": "yellowStar",
+          "answer": "0"
+        },
+        {
+          "imageName": "greenCross",
+          "answer": "0"
+        },
+        {
+          "imageName": "blueCircle",
+          "answer": "1"
+        },
+        {
+          "imageName": "bluePentagon",
+          "answer": "0"
+        },
+        {
+          "imageName": "greenSquare",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuál es el Pentágono?",
+      "options": [
+        {
+          "imageName": "greenSquare",
+          "answer": "0"
+        },
+        {
+          "imageName": "bluePentagon",
+          "answer": "1"
+        },
+        {
+          "imageName": "blueCircle",
+          "answer": "0"
+        },
+        {
+          "imageName": "redTriangle",
+          "answer": "0"
+        },
+        {
+          "imageName": "greenOctagon",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuál es el cuadrado?",
+      "options": [
+        {
+          "imageName": "yellowRectangle",
+          "answer": "0"
+        },
+        {
+          "imageName": "bluePentagon",
+          "answer": "0"
+        },
+        {
+          "imageName": "greenSquare",
+          "answer": "1"
+        },
+        {
+          "imageName": "blueCircle",
+          "answer": "0"
+        },
+        {
+          "imageName": "redTriangle",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuál es el rectángulo?",
+      "options": [
+        {
+          "imageName": "yellowRectangle",
+          "answer": "1"
+        },
+        {
+          "imageName": "redTriangle",
+          "answer": "0"
+        },
+        {
+          "imageName": "greenSquare",
+          "answer": "0"
+        },
+        {
+          "imageName": "greenCross",
+          "answer": "0"
+        },
+        {
+          "imageName": "blueCircle",
+          "answer": "0"
+        }
+      ]
+    }
+  ]
+}

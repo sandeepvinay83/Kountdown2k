@@ -40,6 +40,22 @@ final class HomeViewController: UIViewController {
         navigationItem.addLanguageSegmentedControl(target: self, selector: #selector(self.segmentedValueChanged(_:)))
     }
     
+    // MARK: - Segue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constants.kSegueKey.eShowBasicColors.rawValue {
+            guard let destinationViewController = segue.destination as? BasicColorsViewController else {
+                return
+            }
+            destinationViewController.basicColorsArray = self.loadBasicColorsData()
+        } else if segue.identifier == Constants.kSegueKey.eShowIdentifyShape.rawValue {
+            guard let destinationViewController = segue.destination as? IdentifyShapeViewController else {
+                return
+            }
+            destinationViewController.identifyShapeArray = self.loadIdentifyShapeData()
+        }
+    }
+    
     // MARK: - Action methods
     
     @objc func segmentedValueChanged(_ sender:UISegmentedControl!)
@@ -75,6 +91,40 @@ final class HomeViewController: UIViewController {
                 return
             }
             mainCategoryArray = kindergartenModel.mainCategoryArray
+        }
+    }
+    
+    private func loadBasicColorsData() -> [ClassifyModel]? {
+        let kindergartenWebservice = KindergartenWebservice()
+        if LocalStorageManager.shared.selectedLanguage == Constants.kLanguageKey.eEnglish.rawValue {
+            kindergartenWebservice.basicColorsApi_English()
+            guard let basicColorsModel: BasicColorsResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .BasicColorsJson_English) else {
+                return nil
+            }
+            return basicColorsModel.basicColorsArray
+        } else {
+            kindergartenWebservice.basicColorsApi_Spanish()
+            guard let basicColorsModel: BasicColorsResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .BasicColorsJson_Spanish) else {
+                return nil
+            }
+            return basicColorsModel.basicColorsArray
+        }
+    }
+    
+    private func loadIdentifyShapeData() -> [ClassifyModel]? {
+        let kindergartenWebservice = KindergartenWebservice()
+        if LocalStorageManager.shared.selectedLanguage == Constants.kLanguageKey.eEnglish.rawValue {
+            kindergartenWebservice.identifyShapeApi_English()
+            guard let identifyShapeModel: IdentifyShapeResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .IdentifyShapeJson_English) else {
+                return nil
+            }
+            return identifyShapeModel.identifyShapeArray
+        } else {
+            kindergartenWebservice.identifyShapeApi_Spanish()
+            guard let identifyShapeModel: IdentifyShapeResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .IdentifyShapeJson_Spanish) else {
+                return nil
+            }
+            return identifyShapeModel.identifyShapeArray
         }
     }
 }
@@ -123,6 +173,10 @@ extension HomeViewController: UITableViewDelegate {
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowClassify.rawValue, sender: nil)
             case 1:
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowDifference.rawValue, sender: nil)
+            case 2:
+                self.performSegue(withIdentifier: Constants.kSegueKey.eShowBasicColors.rawValue, sender: nil)
+            case 3:
+                self.performSegue(withIdentifier: Constants.kSegueKey.eShowIdentifyShape.rawValue, sender: nil)
             default:
                 print("Cell not defined")
             }

@@ -1,0 +1,94 @@
+{
+  "BasicColors": [
+    {
+      "title": "",
+      "header": "Which is blue color?",
+      "options": [
+        {
+          "imageName": "redTriangle",
+          "answer": "0"
+        },
+        {
+          "imageName": "blueCircle",
+          "answer": "1"
+        },
+        {
+          "imageName": "greenSquare",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "Which is red color?",
+      "options": [
+        {
+          "imageName": "yellowStar",
+          "answer": "0"
+        },
+        {
+          "imageName": "greenCross",
+          "answer": "0"
+        },
+        {
+          "imageName": "redHeart",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "Which is yellow color?",
+      "options": [
+        {
+          "imageName": "blueMoon",
+          "answer": "0"
+        },
+        {
+          "imageName": "yellowStar",
+          "answer": "1"
+        },
+        {
+          "imageName": "pinkArrow",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "Which is green color?",
+      "options": [
+        {
+          "imageName": "yellowStar",
+          "answer": "0"
+        },
+        {
+          "imageName": "redHeart",
+          "answer": "0"
+        },
+        {
+          "imageName": "greenCross",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "Which is purple color?",
+      "options": [
+        {
+          "imageName": "purpleDiamond",
+          "answer": "1"
+        },
+        {
+          "imageName": "yellowRectangle",
+          "answer": "0"
+        },
+        {
+          "imageName": "greenSquare",
+          "answer": "0"
+        }
+      ]
+    }
+  ]
+}
