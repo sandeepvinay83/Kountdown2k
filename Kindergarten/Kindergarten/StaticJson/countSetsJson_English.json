@@ -1,0 +1,180 @@
+{
+  "CountSets": [
+    {
+      "title": "",
+      "header": "How many cars are there below?",
+      "imageName" : "5cars",
+      "options": [
+        {
+          "title":"3",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title": "5",
+          "imageName": "",
+          "answer": "1"
+        },
+        {
+          "title":"6",
+          "imageName": "",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "How many elephants are there below?",
+      "imageName" : "3elephants",
+      "options": [
+        {
+          "title":"2",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title": "7",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"3",
+          "imageName": "",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "How many flowers are there below?",
+      "imageName" : "6flowers",
+      "options": [
+        {
+          "title":"6",
+          "imageName": "",
+          "answer": "1"
+        },
+        {
+          "title": "5",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"7",
+          "imageName": "",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "How many fish are there below?",
+      "imageName" : "1fish",
+      "options": [
+        {
+          "title":"3",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title": "1",
+          "imageName": "",
+          "answer": "1"
+        },
+        {
+          "title":"2",
+          "imageName": "",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "How many turtles are there below?",
+      "imageName" : "8turtles",
+      "options": [
+        {
+          "title":"8",
+          "imageName": "",
+          "answer": "1"
+        },
+        {
+          "title": "5",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"7",
+          "imageName": "",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "How many slides are there below?",
+      "imageName" : "2slides",
+      "options": [
+        {
+          "title":"2",
+          "imageName": "",
+          "answer": "1"
+        },
+        {
+          "title": "3",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"1",
+          "imageName": "",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "How many ducks are there below?",
+      "imageName" : "7ducks",
+      "options": [
+        {
+          "title":"3",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title": "5",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"7",
+          "imageName": "",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "How many houses are there below?",
+      "imageName" : "4houses",
+      "options": [
+        {
+          "title":"3",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title": "5",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"4",
+          "imageName": "",
+          "answer": "1"
+        }
+      ]
+    }
+  ]
+}

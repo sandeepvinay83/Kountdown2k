@@ -14,6 +14,9 @@
 		C100CB0F2AB33B21001B621D /* DifferenceItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100CB0E2AB33B21001B621D /* DifferenceItemViewController.swift */; };
 		C11C2FBE2AADB7AB00F72733 /* OverrideExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */; };
 		C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBF2AADBBF800F72733 /* Constants.swift */; };
+		C143CD1E2AB9C48D002672C4 /* countSetsJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C143CD1C2AB9C48D002672C4 /* countSetsJson_English.json */; };
+		C143CD1F2AB9C48D002672C4 /* countSetsJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C143CD1D2AB9C48D002672C4 /* countSetsJson_Spanish.json */; };
+		C143CD212AB9D526002672C4 /* CountSetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143CD202AB9D526002672C4 /* CountSetsViewController.swift */; };
 		C14680C72AA5FF06007852DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680C62AA5FF06007852DF /* AppDelegate.swift */; };
 		C14680C92AA5FF06007852DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680C82AA5FF06007852DF /* SceneDelegate.swift */; };
 		C14680CB2AA5FF06007852DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680CA2AA5FF06007852DF /* ViewController.swift */; };
@@ -50,6 +53,9 @@
 		C100CB0E2AB33B21001B621D /* DifferenceItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceItemViewController.swift; sourceTree = "<group>"; };
 		C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideExtensions.swift; sourceTree = "<group>"; };
 		C11C2FBF2AADBBF800F72733 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C143CD1C2AB9C48D002672C4 /* countSetsJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countSetsJson_English.json; sourceTree = "<group>"; };
+		C143CD1D2AB9C48D002672C4 /* countSetsJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countSetsJson_Spanish.json; sourceTree = "<group>"; };
+		C143CD202AB9D526002672C4 /* CountSetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSetsViewController.swift; sourceTree = "<group>"; };
 		C14680C32AA5FF06007852DF /* Kindergarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindergarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14680C62AA5FF06007852DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14680C82AA5FF06007852DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 				C100CB0E2AB33B21001B621D /* DifferenceItemViewController.swift */,
 				C1FA8B482AB4828B0068272E /* BasicColorsViewController.swift */,
 				C1FA8B4E2AB4E1E50068272E /* IdentifyShapeViewController.swift */,
+				C143CD202AB9D526002672C4 /* CountSetsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -182,6 +189,8 @@
 		C1BE5E912AAB924000B18473 /* StaticJson */ = {
 			isa = PBXGroup;
 			children = (
+				C143CD1C2AB9C48D002672C4 /* countSetsJson_English.json */,
+				C143CD1D2AB9C48D002672C4 /* countSetsJson_Spanish.json */,
 				C1FA8B4B2AB4DA960068272E /* identifyShapeJson_English.json */,
 				C1FA8B4A2AB4DA950068272E /* identifyShapeJson_Spanish.json */,
 				C1F17B932AB3960300AA54D1 /* basicColorsJson_English.json */,
@@ -281,8 +290,10 @@
 				C14680D32AA5FF08007852DF /* LaunchScreen.storyboard in Resources */,
 				C14680D02AA5FF08007852DF /* Assets.xcassets in Resources */,
 				C100CB0B2AB321D3001B621D /* differencesJson_Spanish.json in Resources */,
+				C143CD1E2AB9C48D002672C4 /* countSetsJson_English.json in Resources */,
 				C100CB072AB30DA8001B621D /* differencesJson_English.json in Resources */,
 				C1A8FC7C2AAF533F002940F6 /* mainCategoryJson_English.json in Resources */,
+				C143CD1F2AB9C48D002672C4 /* countSetsJson_Spanish.json in Resources */,
 				C1F17B952AB3960300AA54D1 /* basicColorsJson_English.json in Resources */,
 				C1A8FC7F2AAF5856002940F6 /* classifyJson_Spanish.json in Resources */,
 				C14680CE2AA5FF06007852DF /* Main.storyboard in Resources */,
@@ -302,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C14680CB2AA5FF06007852DF /* ViewController.swift in Sources */,
+				C143CD212AB9D526002672C4 /* CountSetsViewController.swift in Sources */,
 				C100CB0D2AB322C5001B621D /* DifferenceViewController.swift in Sources */,
 				C1BE5E962AAB966F00B18473 /* KindergartenModel.swift in Sources */,
 				C14680C72AA5FF06007852DF /* AppDelegate.swift in Sources */,

@@ -37,20 +37,24 @@ struct ClassifyResponseModel: Codable {
 struct ClassifyModel: Codable {
     var title: String
     var header: String
+    var imageName: String?
     var options: [OptionModel]
     private enum CodingKeys: String, CodingKey {
         case title = "title"
         case header = "header"
+        case imageName = "imageName"
         case options = "options"
     }
 }
 
 struct OptionModel: Codable {
-    var imageName: String
+    var imageName: String?
     var answer: String
+    var title: String?
     private enum CodingKeys: String, CodingKey {
         case imageName = "imageName"
         case answer = "answer"
+        case title = "title"
     }
 }
 
@@ -78,5 +82,14 @@ struct IdentifyShapeResponseModel: Codable {
     var identifyShapeArray: [ClassifyModel]
     private enum CodingKeys: String, CodingKey {
         case identifyShapeArray = "IdentifyShape"
+    }
+}
+
+// MARK: - Count Sets Model
+
+struct CountSetsResponseModel: Codable {
+    var countSetsArray: [ClassifyModel]
+    private enum CodingKeys: String, CodingKey {
+        case countSetsArray = "CountSets"
     }
 }

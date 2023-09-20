@@ -118,4 +118,26 @@ final class KindergartenWebservice {
         }
         LocalStorageManager.shared.saveToLocalStorage(fileName: .IdentifyShapeJson_Spanish, responseObject: identifyShapeModel)
     }
+    
+    // MARK: - Count Sets
+    
+    /// count sets json response will be in english language
+    func countSetsApi_English() {
+        let networkService = Networking()
+        guard let countSetsModel: CountSetsResponseModel = networkService.loadJson(filename: FileName.CountSetsJson_English.rawValue) else {
+            print("Could not read CountSetsJson_English json")
+            return
+        }
+        LocalStorageManager.shared.saveToLocalStorage(fileName: .CountSetsJson_English, responseObject: countSetsModel)
+    }
+    
+    /// countSets json response will be in spanish language
+    func countSetsApi_Spanish() {
+        let networkService = Networking()
+        guard let countSetsModel: CountSetsResponseModel = networkService.loadJson(filename: FileName.CountSetsJson_Spanish.rawValue) else {
+            print("Could not read CountSetsJson_Spanish json")
+            return
+        }
+        LocalStorageManager.shared.saveToLocalStorage(fileName: .CountSetsJson_Spanish, responseObject: countSetsModel)
+    }
 }

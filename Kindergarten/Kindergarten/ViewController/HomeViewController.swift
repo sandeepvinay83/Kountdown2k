@@ -36,7 +36,7 @@ final class HomeViewController: UIViewController {
         self.loadMaincategoryData()
         self.mainCategoryTableView.sectionFooterHeight = 0.0
         print(mainCategoryArray ?? "")
-        navigationItem.title = "KOUNTDOWNN2K"
+        navigationItem.title = "KOUNTDOWN2K"
         navigationItem.addLanguageSegmentedControl(target: self, selector: #selector(self.segmentedValueChanged(_:)))
     }
     
@@ -53,6 +53,11 @@ final class HomeViewController: UIViewController {
                 return
             }
             destinationViewController.identifyShapeArray = self.loadIdentifyShapeData()
+        } else if segue.identifier == Constants.kSegueKey.eShowCountSets.rawValue {
+            guard let destinationViewController = segue.destination as? CountSetsViewController else {
+                return
+            }
+            destinationViewController.countSetsArray = self.loadCountSetsData()
         }
     }
     
@@ -127,6 +132,23 @@ final class HomeViewController: UIViewController {
             return identifyShapeModel.identifyShapeArray
         }
     }
+    
+    private func loadCountSetsData() -> [ClassifyModel]? {
+        let kindergartenWebservice = KindergartenWebservice()
+        if LocalStorageManager.shared.selectedLanguage == Constants.kLanguageKey.eEnglish.rawValue {
+            kindergartenWebservice.countSetsApi_English()
+            guard let countSetsModel: CountSetsResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .CountSetsJson_English) else {
+                return nil
+            }
+            return countSetsModel.countSetsArray
+        } else {
+            kindergartenWebservice.countSetsApi_Spanish()
+            guard let countSetsModel: CountSetsResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .CountSetsJson_Spanish) else {
+                return nil
+            }
+            return countSetsModel.countSetsArray
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -177,6 +199,8 @@ extension HomeViewController: UITableViewDelegate {
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowBasicColors.rawValue, sender: nil)
             case 3:
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowIdentifyShape.rawValue, sender: nil)
+            case 5:
+                self.performSegue(withIdentifier: Constants.kSegueKey.eShowCountSets.rawValue, sender: nil)
             default:
                 print("Cell not defined")
             }

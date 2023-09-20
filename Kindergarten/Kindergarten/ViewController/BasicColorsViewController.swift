@@ -76,7 +76,6 @@ extension BasicColorsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return basicColorsModel?.options.count ?? 0
         return self.basicColorsArray?[self.currentArrayIndex].options.count ?? 0
     }
 
@@ -84,13 +83,12 @@ extension BasicColorsViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: kBasicColorsTexts.eCellId.rawValue, for: indexPath) as? ClassifyItemCell else {
             fatalError("Basic Colors Cell not exists")
         }
-//        cell.optionDisplayModel = OptionDisplayModel(optionModel: self.basicColorsModel?.options[indexPath.row], isCheckmark: false)
         cell.optionDisplayModel = OptionDisplayModel(optionModel: self.basicColorsArray?[self.currentArrayIndex].options[indexPath.row], isCheckmark: false)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90.0
+        return 250.0
     }
 }
 
@@ -98,13 +96,11 @@ extension BasicColorsViewController: UITableViewDataSource {
 
 extension BasicColorsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if self.basicColorsModel?.options[indexPath.row].answer == "0" {
         if self.basicColorsArray?[self.currentArrayIndex].options[indexPath.row].answer == "0" {
             AlertView().showAlertView(controller: self, title: "", message: "You selected wrong answer. Try again!")
         } else {
             AlertView().showAlertView(controller: self, title: "", message: "Awesome! You did it. Do you want to play again?", okButtonTitle: "Yes", cancelButtonTitle: "No", handler: { (action) in
                 if action.title == "No" {
-//                    self.navigationController?.popViewController(animated: true)
                 } else if action.title == "Yes" {
                     self.basicColorsTableView.reloadData()
                 }

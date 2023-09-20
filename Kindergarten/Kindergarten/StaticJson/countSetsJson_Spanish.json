@@ -1,0 +1,180 @@
+{
+  "CountSets": [
+    {
+      "title": "",
+      "header": "¿Cuántos autos hay debajo?",
+      "imageName" : "5cars",
+      "options": [
+        {
+          "title":"3",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title": "5",
+          "imageName": "",
+          "answer": "1"
+        },
+        {
+          "title":"6",
+          "imageName": "",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuántos elefantes hay debajo?",
+      "imageName" : "3elephants",
+      "options": [
+        {
+          "title":"2",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title": "7",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"3",
+          "imageName": "",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuántas flores hay debajo?",
+      "imageName" : "6flowers",
+      "options": [
+        {
+          "title":"6",
+          "imageName": "",
+          "answer": "1"
+        },
+        {
+          "title": "5",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"7",
+          "imageName": "",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuántos peces hay debajo?",
+      "imageName" : "1fish",
+      "options": [
+        {
+          "title":"3",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title": "1",
+          "imageName": "",
+          "answer": "1"
+        },
+        {
+          "title":"2",
+          "imageName": "",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuántas tortugas hay debajo?",
+      "imageName" : "8turtles",
+      "options": [
+        {
+          "title":"8",
+          "imageName": "",
+          "answer": "1"
+        },
+        {
+          "title": "5",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"7",
+          "imageName": "",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuántas diapositivas hay debajo?",
+      "imageName" : "2slides",
+      "options": [
+        {
+          "title":"2",
+          "imageName": "",
+          "answer": "1"
+        },
+        {
+          "title": "3",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"1",
+          "imageName": "",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuántos patos hay debajo?",
+      "imageName" : "7ducks",
+      "options": [
+        {
+          "title":"3",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title": "5",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"7",
+          "imageName": "",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "header": "¿Cuántas casas hay debajo?",
+      "imageName" : "4houses",
+      "options": [
+        {
+          "title":"3",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title": "5",
+          "imageName": "",
+          "answer": "0"
+        },
+        {
+          "title":"4",
+          "imageName": "",
+          "answer": "1"
+        }
+      ]
+    }
+  ]
+}

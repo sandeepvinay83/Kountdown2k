@@ -28,5 +28,6 @@ class Constants {
         case eShowDifferenceItem = "showDifferenceItem"
         case eShowBasicColors = "showBasicColors"
         case eShowIdentifyShape = "showIdentifyShape"
+        case eShowCountSets = "showCountSets"
     }
 }
