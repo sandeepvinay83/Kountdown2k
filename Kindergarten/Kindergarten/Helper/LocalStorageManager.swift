@@ -21,6 +21,8 @@ enum FileName: String {
     case IdentifyShapeJson_Spanish = "identifyShapeJson_Spanish"
     case CountSetsJson_English = "countSetsJson_English"
     case CountSetsJson_Spanish = "countSetsJson_Spanish"
+    case AdditionJson_English = "additionJson_English"
+    case AdditionJson_Spanish = "additionJson_Spanish"
     
 }
 

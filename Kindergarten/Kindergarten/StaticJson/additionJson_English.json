@@ -1,0 +1,148 @@
+{
+  "Addition": [
+    {
+      "title": "2 + 4 =",
+      "header": "Answer the addition of below two numbers",
+      "options": [
+        {
+          "title":"5",
+          "answer": "0"
+        },
+        {
+          "title": "6",
+          "answer": "1"
+        },
+        {
+          "title":"7",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "3 + 5 =",
+      "header": "Answer the addition of below two numbers",
+      "options": [
+        {
+          "title":"4",
+          "answer": "0"
+        },
+        {
+          "title": "9",
+          "answer": "0"
+        },
+        {
+          "title":"8",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "7 + 0 =",
+      "header": "Answer the addition of below two numbers",
+      "options": [
+        {
+          "title":"7",
+          "answer": "1"
+        },
+        {
+          "title": "6",
+          "answer": "0"
+        },
+        {
+          "title":"5",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "6 + 4 =",
+      "header": "Answer the addition of below two numbers",
+      "options": [
+        {
+          "title":"11",
+          "answer": "0"
+        },
+        {
+          "title": "10",
+          "answer": "1"
+        },
+        {
+          "title":"9",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "8 + 3 =",
+      "header": "Answer the addition of below two numbers",
+      "options": [
+        {
+          "title":"11",
+          "answer": "1"
+        },
+        {
+          "title": "9",
+          "answer": "0"
+        },
+        {
+          "title":"13",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "2 + 6 =",
+      "header": "Answer the addition of below two numbers",
+      "options": [
+        {
+          "title":"8",
+          "answer": "1"
+        },
+        {
+          "title": "5",
+          "answer": "0"
+        },
+        {
+          "title":"7",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "5 + 4 =",
+      "header": "Answer the addition of below two numbers",
+      "options": [
+        {
+          "title":"8",
+          "answer": "0"
+        },
+        {
+          "title": "7",
+          "answer": "0"
+        },
+        {
+          "title":"9",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "7 + 2 =",
+      "header": "Answer the addition of below two numbers",
+      "options": [
+        {
+          "title":"5",
+          "answer": "0"
+        },
+        {
+          "title": "9",
+          "answer": "1"
+        },
+        {
+          "title":"8",
+          "answer": "0"
+        }
+      ]
+    }
+  ]
+}

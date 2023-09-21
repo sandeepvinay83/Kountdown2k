@@ -58,6 +58,11 @@ final class HomeViewController: UIViewController {
                 return
             }
             destinationViewController.countSetsArray = self.loadCountSetsData()
+        } else if segue.identifier == Constants.kSegueKey.eShowAddition.rawValue {
+            guard let destinationViewController = segue.destination as? AdditionViewController else {
+                return
+            }
+            destinationViewController.additionArray = self.loadAdditionData()
         }
     }
     
@@ -149,6 +154,23 @@ final class HomeViewController: UIViewController {
             return countSetsModel.countSetsArray
         }
     }
+    
+    private func loadAdditionData() -> [ClassifyModel]? {
+        let kindergartenWebservice = KindergartenWebservice()
+        if LocalStorageManager.shared.selectedLanguage == Constants.kLanguageKey.eEnglish.rawValue {
+            kindergartenWebservice.additionApi_English()
+            guard let additionModel: AdditionResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .AdditionJson_English) else {
+                return nil
+            }
+            return additionModel.additionArray
+        } else {
+            kindergartenWebservice.additionApi_Spanish()
+            guard let additionModel: AdditionResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .AdditionJson_Spanish) else {
+                return nil
+            }
+            return additionModel.additionArray
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -201,6 +223,8 @@ extension HomeViewController: UITableViewDelegate {
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowIdentifyShape.rawValue, sender: nil)
             case 5:
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowCountSets.rawValue, sender: nil)
+            case 6:
+                self.performSegue(withIdentifier: Constants.kSegueKey.eShowAddition.rawValue, sender: nil)
             default:
                 print("Cell not defined")
             }

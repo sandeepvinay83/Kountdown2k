@@ -93,3 +93,12 @@ struct CountSetsResponseModel: Codable {
         case countSetsArray = "CountSets"
     }
 }
+
+// MARK: - Addition Model
+
+struct AdditionResponseModel: Codable {
+    var additionArray: [ClassifyModel]
+    private enum CodingKeys: String, CodingKey {
+        case additionArray = "Addition"
+    }
+}

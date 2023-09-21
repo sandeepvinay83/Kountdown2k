@@ -39,6 +39,9 @@
 		C1E3E77B2AB1ABA1005EE9C0 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3E77A2AB1ABA1005EE9C0 /* AlertView.swift */; };
 		C1F17B952AB3960300AA54D1 /* basicColorsJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C1F17B932AB3960300AA54D1 /* basicColorsJson_English.json */; };
 		C1F17B962AB3960300AA54D1 /* basicColorsJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C1F17B942AB3960300AA54D1 /* basicColorsJson_Spanish.json */; };
+		C1F381612ABC5D100089D1B2 /* additionJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C1F3815F2ABC5D100089D1B2 /* additionJson_English.json */; };
+		C1F381622ABC5D100089D1B2 /* additionJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C1F381602ABC5D100089D1B2 /* additionJson_Spanish.json */; };
+		C1F381642ABC5F9E0089D1B2 /* AdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F381632ABC5F9E0089D1B2 /* AdditionViewController.swift */; };
 		C1FA8B492AB4828C0068272E /* BasicColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA8B482AB4828B0068272E /* BasicColorsViewController.swift */; };
 		C1FA8B4C2AB4DA960068272E /* identifyShapeJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C1FA8B4A2AB4DA950068272E /* identifyShapeJson_Spanish.json */; };
 		C1FA8B4D2AB4DA960068272E /* identifyShapeJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C1FA8B4B2AB4DA960068272E /* identifyShapeJson_English.json */; };
@@ -80,6 +83,9 @@
 		C1E3E77A2AB1ABA1005EE9C0 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		C1F17B932AB3960300AA54D1 /* basicColorsJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = basicColorsJson_English.json; sourceTree = "<group>"; };
 		C1F17B942AB3960300AA54D1 /* basicColorsJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = basicColorsJson_Spanish.json; sourceTree = "<group>"; };
+		C1F3815F2ABC5D100089D1B2 /* additionJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = additionJson_English.json; sourceTree = "<group>"; };
+		C1F381602ABC5D100089D1B2 /* additionJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = additionJson_Spanish.json; sourceTree = "<group>"; };
+		C1F381632ABC5F9E0089D1B2 /* AdditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionViewController.swift; sourceTree = "<group>"; };
 		C1FA8B482AB4828B0068272E /* BasicColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicColorsViewController.swift; sourceTree = "<group>"; };
 		C1FA8B4A2AB4DA950068272E /* identifyShapeJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = identifyShapeJson_Spanish.json; sourceTree = "<group>"; };
 		C1FA8B4B2AB4DA960068272E /* identifyShapeJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = identifyShapeJson_English.json; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 				C1FA8B482AB4828B0068272E /* BasicColorsViewController.swift */,
 				C1FA8B4E2AB4E1E50068272E /* IdentifyShapeViewController.swift */,
 				C143CD202AB9D526002672C4 /* CountSetsViewController.swift */,
+				C1F381632ABC5F9E0089D1B2 /* AdditionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -189,6 +196,8 @@
 		C1BE5E912AAB924000B18473 /* StaticJson */ = {
 			isa = PBXGroup;
 			children = (
+				C1F3815F2ABC5D100089D1B2 /* additionJson_English.json */,
+				C1F381602ABC5D100089D1B2 /* additionJson_Spanish.json */,
 				C143CD1C2AB9C48D002672C4 /* countSetsJson_English.json */,
 				C143CD1D2AB9C48D002672C4 /* countSetsJson_Spanish.json */,
 				C1FA8B4B2AB4DA960068272E /* identifyShapeJson_English.json */,
@@ -287,8 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F381612ABC5D100089D1B2 /* additionJson_English.json in Resources */,
 				C14680D32AA5FF08007852DF /* LaunchScreen.storyboard in Resources */,
 				C14680D02AA5FF08007852DF /* Assets.xcassets in Resources */,
+				C1F381622ABC5D100089D1B2 /* additionJson_Spanish.json in Resources */,
 				C100CB0B2AB321D3001B621D /* differencesJson_Spanish.json in Resources */,
 				C143CD1E2AB9C48D002672C4 /* countSetsJson_English.json in Resources */,
 				C100CB072AB30DA8001B621D /* differencesJson_English.json in Resources */,
@@ -312,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F381642ABC5F9E0089D1B2 /* AdditionViewController.swift in Sources */,
 				C14680CB2AA5FF06007852DF /* ViewController.swift in Sources */,
 				C143CD212AB9D526002672C4 /* CountSetsViewController.swift in Sources */,
 				C100CB0D2AB322C5001B621D /* DifferenceViewController.swift in Sources */,
