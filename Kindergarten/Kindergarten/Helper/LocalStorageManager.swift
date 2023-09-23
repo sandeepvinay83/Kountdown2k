@@ -23,6 +23,7 @@ enum FileName: String {
     case CountSetsJson_Spanish = "countSetsJson_Spanish"
     case AdditionJson_English = "additionJson_English"
     case AdditionJson_Spanish = "additionJson_Spanish"
+    case UserJson_English = "userJson_English"
     
 }
 
@@ -92,6 +93,16 @@ final class LocalStorageManager {
         }
         set (value) {
             UserDefaults.standard.set(value, forKey: Constants.kUserDefaultsKey.eLanguageSelection.rawValue)
+        }
+    }
+    
+    /// Set / Get for selected username
+    var selectedUsername: String? {
+        get {
+            return UserDefaults.standard.string(forKey: Constants.kUserDefaultsKey.eUsername.rawValue)
+        }
+        set (value) {
+            UserDefaults.standard.set(value, forKey: Constants.kUserDefaultsKey.eUsername.rawValue)
         }
     }
 }

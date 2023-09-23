@@ -102,3 +102,25 @@ struct AdditionResponseModel: Codable {
         case additionArray = "Addition"
     }
 }
+
+// MARK: - User Model
+
+struct UserResponseModel: Codable {
+    var users: [UserModel]?
+    private enum CodingKeys: String, CodingKey {
+        case users = "Users"
+    }
+}
+
+struct UserModel: Codable {
+    var username: String?
+    var password: String?
+    var fullName: String?
+    var email: String?
+    private enum CodingKeys: String, CodingKey {
+        case username = "username"
+        case password = "password"
+        case fullName = "fullName"
+        case email = "email"
+    }
+}

@@ -19,4 +19,13 @@ extension UINavigationItem {
         let segmentBarItem = UIBarButtonItem(customView: languageSegmentedControl)
         rightBarButtonItem = segmentBarItem
     }
+    
+    /// Adding profile icon
+    func addProfileButton(target: Any, selector: Selector?) {
+        self.hidesBackButton = true
+        let backImage : UIImage? = UIImage.init(named: "profile")?.withRenderingMode(.alwaysTemplate)
+        let newBackButton = UIBarButtonItem(image: backImage, style: UIBarButtonItem.Style.plain, target: target, action: selector)
+        newBackButton.tintColor = UIColor.lightGray
+        self.leftBarButtonItem = newBackButton
+    }
 }

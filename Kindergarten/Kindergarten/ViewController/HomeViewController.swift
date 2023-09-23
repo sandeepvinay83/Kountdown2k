@@ -38,6 +38,7 @@ final class HomeViewController: UIViewController {
         print(mainCategoryArray ?? "")
         navigationItem.title = "KOUNTDOWN2K"
         navigationItem.addLanguageSegmentedControl(target: self, selector: #selector(self.segmentedValueChanged(_:)))
+        navigationItem.addProfileButton(target: self, selector: #selector(self.profileClicked(_:)))
     }
     
     // MARK: - Segue
@@ -68,12 +69,15 @@ final class HomeViewController: UIViewController {
     
     // MARK: - Action methods
     
-    @objc func segmentedValueChanged(_ sender:UISegmentedControl!)
-    {
+    @objc func segmentedValueChanged(_ sender:UISegmentedControl!) {
         print("Selected Segment Index is : \(sender.selectedSegmentIndex)")
         LocalStorageManager.shared.selectedLanguage = sender.titleForSegment(at: sender.selectedSegmentIndex)
         self.loadMaincategoryData()
         self.mainCategoryTableView.reloadData()
+    }
+    
+    @objc func profileClicked(_ sender:UIBarButtonItem!) {
+        self.performSegue(withIdentifier: Constants.kSegueKey.eShowProfile.rawValue, sender: nil)
     }
     
     /// header button click

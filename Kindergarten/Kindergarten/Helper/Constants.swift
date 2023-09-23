@@ -12,6 +12,7 @@ class Constants {
     // userdefault keys
     enum kUserDefaultsKey: String {
         case eLanguageSelection = "LanguageSelection"
+        case eUsername = "Username"
     }
     
     // userdefault keys
@@ -30,5 +31,8 @@ class Constants {
         case eShowIdentifyShape = "showIdentifyShape"
         case eShowCountSets = "showCountSets"
         case eShowAddition = "showAddition"
+        case eShowHome = "showHome"
+        case eShowSignup = "showSignup"
+        case eShowProfile = "showProfile"
     }
 }

@@ -23,6 +23,8 @@
 		C14680CE2AA5FF06007852DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14680CC2AA5FF06007852DF /* Main.storyboard */; };
 		C14680D02AA5FF08007852DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14680CF2AA5FF08007852DF /* Assets.xcassets */; };
 		C14680D32AA5FF08007852DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14680D12AA5FF08007852DF /* LaunchScreen.storyboard */; };
+		C150F8332ABDC60C00C0DAF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150F8322ABDC60C00C0DAF2 /* LoginViewController.swift */; };
+		C150F8352ABDD1DB00C0DAF2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150F8342ABDD1DB00C0DAF2 /* SignupViewController.swift */; };
 		C15AE7762AA88B8C003E006A /* MainCategoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15AE7752AA88B8C003E006A /* MainCategoryTableHeaderView.swift */; };
 		C18356882AB0DEF800A0BD7E /* ClassifyItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18356872AB0DEF800A0BD7E /* ClassifyItemCell.swift */; };
 		C1A8FC7B2AAF533F002940F6 /* mainCategoryJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C1A8FC782AAF533E002940F6 /* mainCategoryJson_Spanish.json */; };
@@ -37,6 +39,7 @@
 		C1BE5E992AAB99F000B18473 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E982AAB99F000B18473 /* Networking.swift */; };
 		C1BE5E9C2AAB9A9600B18473 /* KindergartenWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E9B2AAB9A9600B18473 /* KindergartenWebservice.swift */; };
 		C1E3E77B2AB1ABA1005EE9C0 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3E77A2AB1ABA1005EE9C0 /* AlertView.swift */; };
+		C1E98A012ABEF1D9001F9B69 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E98A002ABEF1D9001F9B69 /* ProfileViewController.swift */; };
 		C1F17B952AB3960300AA54D1 /* basicColorsJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C1F17B932AB3960300AA54D1 /* basicColorsJson_English.json */; };
 		C1F17B962AB3960300AA54D1 /* basicColorsJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C1F17B942AB3960300AA54D1 /* basicColorsJson_Spanish.json */; };
 		C1F381612ABC5D100089D1B2 /* additionJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C1F3815F2ABC5D100089D1B2 /* additionJson_English.json */; };
@@ -67,6 +70,8 @@
 		C14680CF2AA5FF08007852DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C14680D22AA5FF08007852DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C14680D42AA5FF08007852DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C150F8322ABDC60C00C0DAF2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C150F8342ABDD1DB00C0DAF2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		C15AE7752AA88B8C003E006A /* MainCategoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategoryTableHeaderView.swift; sourceTree = "<group>"; };
 		C18356872AB0DEF800A0BD7E /* ClassifyItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifyItemCell.swift; sourceTree = "<group>"; };
 		C1A8FC782AAF533E002940F6 /* mainCategoryJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mainCategoryJson_Spanish.json; sourceTree = "<group>"; };
@@ -81,6 +86,7 @@
 		C1BE5E982AAB99F000B18473 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		C1BE5E9B2AAB9A9600B18473 /* KindergartenWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenWebservice.swift; sourceTree = "<group>"; };
 		C1E3E77A2AB1ABA1005EE9C0 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		C1E98A002ABEF1D9001F9B69 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C1F17B932AB3960300AA54D1 /* basicColorsJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = basicColorsJson_English.json; sourceTree = "<group>"; };
 		C1F17B942AB3960300AA54D1 /* basicColorsJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = basicColorsJson_Spanish.json; sourceTree = "<group>"; };
 		C1F3815F2ABC5D100089D1B2 /* additionJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = additionJson_English.json; sourceTree = "<group>"; };
@@ -163,6 +169,9 @@
 				C1FA8B4E2AB4E1E50068272E /* IdentifyShapeViewController.swift */,
 				C143CD202AB9D526002672C4 /* CountSetsViewController.swift */,
 				C1F381632ABC5F9E0089D1B2 /* AdditionViewController.swift */,
+				C150F8322ABDC60C00C0DAF2 /* LoginViewController.swift */,
+				C150F8342ABDD1DB00C0DAF2 /* SignupViewController.swift */,
+				C1E98A002ABEF1D9001F9B69 /* ProfileViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -326,6 +335,7 @@
 				C1F381642ABC5F9E0089D1B2 /* AdditionViewController.swift in Sources */,
 				C14680CB2AA5FF06007852DF /* ViewController.swift in Sources */,
 				C143CD212AB9D526002672C4 /* CountSetsViewController.swift in Sources */,
+				C150F8332ABDC60C00C0DAF2 /* LoginViewController.swift in Sources */,
 				C100CB0D2AB322C5001B621D /* DifferenceViewController.swift in Sources */,
 				C1BE5E962AAB966F00B18473 /* KindergartenModel.swift in Sources */,
 				C14680C72AA5FF06007852DF /* AppDelegate.swift in Sources */,
@@ -340,9 +350,11 @@
 				319D70622AAEAC6500CAC5D8 /* ClassifyViewController.swift in Sources */,
 				C15AE7762AA88B8C003E006A /* MainCategoryTableHeaderView.swift in Sources */,
 				C1BE5E902AAB918300B18473 /* LocalStorageManager.swift in Sources */,
+				C150F8352ABDD1DB00C0DAF2 /* SignupViewController.swift in Sources */,
 				C1FA8B492AB4828C0068272E /* BasicColorsViewController.swift in Sources */,
 				C1FA8B4F2AB4E1E50068272E /* IdentifyShapeViewController.swift in Sources */,
 				C1E3E77B2AB1ABA1005EE9C0 /* AlertView.swift in Sources */,
+				C1E98A012ABEF1D9001F9B69 /* ProfileViewController.swift in Sources */,
 				C1A8FC812AAF7418002940F6 /* ClassifyItemViewController.swift in Sources */,
 				C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */,
 			);
