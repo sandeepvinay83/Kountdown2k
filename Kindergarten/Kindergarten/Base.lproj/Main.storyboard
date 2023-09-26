@@ -16,12 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wIL-QP-Sjs">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Sp3-GR-Vv0">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wIL-QP-Sjs">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" restorationIdentifier="HomeHeaderCell" id="8Ni-Eh-14w">
-                                    <rect key="frame" x="0.0" y="116.99999809265137" width="393" height="44"/>
+                                    <rect key="frame" x="0.0" y="116.33333206176758" width="393" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XYO-7E-O6I">
@@ -37,7 +41,7 @@
                                             <buttonConfiguration key="configuration" style="plain"/>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="XYO-7E-O6I" secondAttribute="trailing" constant="10" id="C8v-5E-uSt"/>
                                         <constraint firstItem="rj2-2N-mZq" firstAttribute="leading" secondItem="8Ni-Eh-14w" secondAttribute="leading" constant="1" id="GQn-Qg-wdq"/>
@@ -54,7 +58,9 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xyb-aw-ybL" id="593-2Y-obw">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -66,9 +72,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Sp3-GR-Vv0" secondAttribute="bottom" id="4d6-Yr-QCO"/>
                             <constraint firstItem="wIL-QP-Sjs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KEp-xx-kKe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wIL-QP-Sjs" secondAttribute="trailing" id="Xl4-7m-Fqd"/>
+                            <constraint firstItem="Sp3-GR-Vv0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dGT-PN-y3B"/>
+                            <constraint firstItem="Sp3-GR-Vv0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pJq-Oo-3je"/>
                             <constraint firstItem="wIL-QP-Sjs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uF8-yj-xvZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sp3-GR-Vv0" secondAttribute="trailing" id="vrn-p8-itH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wIL-QP-Sjs" secondAttribute="bottom" id="z0E-CJ-Faa"/>
                         </constraints>
                     </view>
