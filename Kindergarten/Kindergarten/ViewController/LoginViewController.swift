@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigationItem.title = "KOUNTDOWN2K"
         self.usernameTextField.delegate = self
         self.passwordTextField.delegate = self
         self.passwordTextField.isSecureTextEntry = true
