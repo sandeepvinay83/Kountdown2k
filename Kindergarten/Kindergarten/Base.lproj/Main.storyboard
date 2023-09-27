@@ -380,9 +380,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kidsBg1" translatesAutoresizingMaskIntoConstraints="NO" id="b4C-Xy-jJk">
+                                <rect key="frame" x="0.0" y="306.66666666666674" width="393" height="511.33333333333326"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="anX-vS-qex">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5999836825" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DifferenceCell" id="j9X-Lu-tdn">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -391,6 +394,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5999836825" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
@@ -403,7 +407,11 @@
                         <viewLayoutGuide key="safeArea" id="hoM-5M-Lq7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="b4C-Xy-jJk" firstAttribute="trailing" secondItem="hoM-5M-Lq7" secondAttribute="trailing" id="6vU-fc-jOg"/>
+                            <constraint firstItem="b4C-Xy-jJk" firstAttribute="leading" secondItem="hoM-5M-Lq7" secondAttribute="leading" id="9YE-nS-q2G"/>
+                            <constraint firstItem="b4C-Xy-jJk" firstAttribute="height" secondItem="7iD-qb-ncS" secondAttribute="height" multiplier="0.6" id="LXT-ZI-jz0"/>
                             <constraint firstItem="anX-vS-qex" firstAttribute="leading" secondItem="hoM-5M-Lq7" secondAttribute="leading" id="SPZ-my-6u1"/>
+                            <constraint firstItem="hoM-5M-Lq7" firstAttribute="bottom" secondItem="b4C-Xy-jJk" secondAttribute="bottom" id="Ymw-od-jpb"/>
                             <constraint firstItem="hoM-5M-Lq7" firstAttribute="bottom" secondItem="anX-vS-qex" secondAttribute="bottom" id="ana-1T-kwK"/>
                             <constraint firstItem="anX-vS-qex" firstAttribute="top" secondItem="hoM-5M-Lq7" secondAttribute="top" id="ewX-He-aTi"/>
                             <constraint firstItem="hoM-5M-Lq7" firstAttribute="trailing" secondItem="anX-vS-qex" secondAttribute="trailing" id="jqa-b0-dMb"/>
@@ -427,9 +435,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kidsBg1" translatesAutoresizingMaskIntoConstraints="NO" id="4C6-zw-5Up">
+                                <rect key="frame" x="0.0" y="306.66666666666674" width="393" height="511.33333333333326"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JiS-u2-xVH">
                                 <rect key="frame" x="0.0" y="139.66666666666669" width="393" height="678.33333333333326"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5999836825" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DifferenceItemCell" rowHeight="86" id="BcA-bG-bVM" customClass="ClassifyItemCell" customModule="Kindergarten" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="86"/>
@@ -460,6 +471,7 @@
                                                 <constraint firstItem="Cts-Nb-rAX" firstAttribute="centerY" secondItem="VE4-fR-f6o" secondAttribute="centerY" id="xde-Kx-FSE"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5999836825" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="checkmarkImageView" destination="Cts-Nb-rAX" id="Xnn-Qp-LdN"/>
@@ -484,11 +496,15 @@
                         <constraints>
                             <constraint firstItem="vSx-dK-IPo" firstAttribute="top" secondItem="WWC-0F-3cj" secondAttribute="top" id="Vdz-dT-JQv"/>
                             <constraint firstItem="JiS-u2-xVH" firstAttribute="top" secondItem="vSx-dK-IPo" secondAttribute="bottom" constant="8" symbolic="YES" id="XNZ-uV-B4M"/>
+                            <constraint firstItem="WWC-0F-3cj" firstAttribute="trailing" secondItem="4C6-zw-5Up" secondAttribute="trailing" id="cdJ-gi-TZK"/>
                             <constraint firstItem="WWC-0F-3cj" firstAttribute="trailing" secondItem="vSx-dK-IPo" secondAttribute="trailing" constant="10" id="dqV-0d-hVJ"/>
+                            <constraint firstItem="4C6-zw-5Up" firstAttribute="leading" secondItem="WWC-0F-3cj" secondAttribute="leading" id="gfn-Iq-PyQ"/>
                             <constraint firstItem="JiS-u2-xVH" firstAttribute="leading" secondItem="WWC-0F-3cj" secondAttribute="leading" id="iSM-7Y-rmh"/>
                             <constraint firstItem="WWC-0F-3cj" firstAttribute="bottom" secondItem="JiS-u2-xVH" secondAttribute="bottom" id="owJ-kn-qz6"/>
+                            <constraint firstItem="4C6-zw-5Up" firstAttribute="height" secondItem="i2O-ut-IpR" secondAttribute="height" multiplier="0.6" id="pLE-za-dh1"/>
                             <constraint firstItem="vSx-dK-IPo" firstAttribute="leading" secondItem="WWC-0F-3cj" secondAttribute="leading" constant="10" id="qUd-fv-Rx6"/>
                             <constraint firstItem="WWC-0F-3cj" firstAttribute="trailing" secondItem="JiS-u2-xVH" secondAttribute="trailing" id="tB6-mc-rKy"/>
+                            <constraint firstItem="WWC-0F-3cj" firstAttribute="bottom" secondItem="4C6-zw-5Up" secondAttribute="bottom" id="uTG-6y-u9h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" style="editor" id="KKw-EZ-0kx"/>
@@ -1191,6 +1207,7 @@
     </scenes>
     <resources>
         <image name="background" width="853.33331298828125" height="533.33331298828125"/>
+        <image name="kidsBg1" width="1141.6666259765625" height="826.66668701171875"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
