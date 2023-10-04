@@ -29,8 +29,10 @@ struct MainCategoryModel: Codable {
 
 struct ClassifyResponseModel: Codable {
     var classifyArray: [ClassifyModel]
+    var message: MessageModel?
     private enum CodingKeys: String, CodingKey {
         case classifyArray = "Classify"
+        case message = "Message"
     }
 }
 
@@ -122,5 +124,16 @@ struct UserModel: Codable {
         case password = "password"
         case fullName = "fullName"
         case email = "email"
+    }
+}
+
+// MARK: - Message Model
+
+struct MessageModel: Codable {
+    var success: String?
+    var fail: String?
+    private enum CodingKeys: String, CodingKey {
+        case success = "success"
+        case fail = "fail"
     }
 }

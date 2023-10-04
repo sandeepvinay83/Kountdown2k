@@ -35,4 +35,18 @@ class Constants {
         case eShowSignup = "showSignup"
         case eShowProfile = "showProfile"
     }
+    
+    // Alert button title English
+    enum kAlertButtonTitleKey_English: String {
+        case eYes = "Yes"
+        case eNo = "No"
+        case eOk = "Ok"
+    }
+    
+    // Alert button title Spanish
+    enum kAlertButtonTitleKey_Spanish: String {
+        case eYes = "Sí"
+        case eNo = "No"
+        case eOk = "De acuerdo"
+    }
 }

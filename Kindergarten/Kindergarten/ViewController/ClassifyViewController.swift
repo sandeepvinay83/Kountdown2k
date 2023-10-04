@@ -14,6 +14,11 @@ enum kClassifyTexts: String {
 final class ClassifyViewController: UIViewController {
     @IBOutlet weak var classifyTableView: UITableView!
     private var classifyArray: [ClassifyModel]?
+    private var successMessage: String?
+    private var failMessage: String?
+    private var alertButtonYesTitle: String?
+    private var alertButtonNoTitle: String?
+    private var alertButtonOkTitle: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +47,11 @@ final class ClassifyViewController: UIViewController {
             return
         }
         destinationViewController.classifyModel = sender as? ClassifyModel
+        destinationViewController.successMessage = self.successMessage
+        destinationViewController.failMessage = self.failMessage
+        destinationViewController.alertButtonYesTitle = self.alertButtonYesTitle
+        destinationViewController.alertButtonNoTitle = self.alertButtonNoTitle
+        destinationViewController.alertButtonOkTitle = self.alertButtonOkTitle
     }
     
     // MARK: - Action methods
@@ -64,12 +74,22 @@ final class ClassifyViewController: UIViewController {
                 return
             }
             classifyArray = classifyModel.classifyArray
+            successMessage = classifyModel.message?.success
+            failMessage = classifyModel.message?.fail
+            alertButtonYesTitle = Constants.kAlertButtonTitleKey_English.eYes.rawValue
+            alertButtonNoTitle = Constants.kAlertButtonTitleKey_English.eNo.rawValue
+            alertButtonOkTitle = Constants.kAlertButtonTitleKey_English.eOk.rawValue
         } else {
             kindergartenWebservice.classifyApi_Spanish()
             guard let classifyModel: ClassifyResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .ClassifyJson_Spanish) else {
                 return
             }
             classifyArray = classifyModel.classifyArray
+            successMessage = classifyModel.message?.success
+            failMessage = classifyModel.message?.fail
+            alertButtonYesTitle = Constants.kAlertButtonTitleKey_Spanish.eYes.rawValue
+            alertButtonNoTitle = Constants.kAlertButtonTitleKey_Spanish.eNo.rawValue
+            alertButtonOkTitle = Constants.kAlertButtonTitleKey_Spanish.eOk.rawValue
         }
     }
 }

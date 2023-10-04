@@ -644,6 +644,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JZf-Se-jTp">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fky-OS-KCF">
                                 <rect key="frame" x="10" y="113" width="373" height="256"/>
                                 <subviews>
@@ -686,9 +689,13 @@
                         <viewLayoutGuide key="safeArea" id="mKA-8Y-7qL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="JZf-Se-jTp" firstAttribute="top" secondItem="2WP-r9-N2W" secondAttribute="top" id="0Ga-9Q-rES"/>
+                            <constraint firstItem="JZf-Se-jTp" firstAttribute="leading" secondItem="mKA-8Y-7qL" secondAttribute="leading" id="12G-Nc-jHg"/>
                             <constraint firstItem="mKA-8Y-7qL" firstAttribute="trailing" secondItem="fky-OS-KCF" secondAttribute="trailing" constant="10" id="4U5-gy-Awj"/>
                             <constraint firstItem="fky-OS-KCF" firstAttribute="top" secondItem="mKA-8Y-7qL" secondAttribute="top" constant="10" id="LKl-od-UHd"/>
+                            <constraint firstAttribute="bottom" secondItem="JZf-Se-jTp" secondAttribute="bottom" id="LYm-DR-cku"/>
                             <constraint firstItem="fky-OS-KCF" firstAttribute="leading" secondItem="mKA-8Y-7qL" secondAttribute="leading" constant="10" id="euc-Wt-bpW"/>
+                            <constraint firstItem="JZf-Se-jTp" firstAttribute="trailing" secondItem="mKA-8Y-7qL" secondAttribute="trailing" id="mmR-7g-238"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" style="editor" id="89x-Zv-Xx6"/>
@@ -712,6 +719,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rzZ-KT-0F1">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4Xu-T0-VeO">
                                 <rect key="frame" x="10" y="113.00000000000001" width="373" height="166.33333333333337"/>
                                 <subviews>
@@ -781,6 +791,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4Xu-T0-VeO" firstAttribute="leading" secondItem="xHD-0d-ggT" secondAttribute="leading" constant="10" id="2KI-7n-UjY"/>
+                            <constraint firstItem="rzZ-KT-0F1" firstAttribute="trailing" secondItem="xHD-0d-ggT" secondAttribute="trailing" id="2Zw-zX-pyx"/>
+                            <constraint firstAttribute="bottom" secondItem="rzZ-KT-0F1" secondAttribute="bottom" id="QO3-JT-FRM"/>
+                            <constraint firstItem="rzZ-KT-0F1" firstAttribute="top" secondItem="MXe-it-Ond" secondAttribute="top" id="Sei-Bz-Wfn"/>
+                            <constraint firstItem="rzZ-KT-0F1" firstAttribute="leading" secondItem="xHD-0d-ggT" secondAttribute="leading" id="YD4-T2-zA1"/>
                             <constraint firstItem="xHD-0d-ggT" firstAttribute="trailing" secondItem="4Xu-T0-VeO" secondAttribute="trailing" constant="10" id="nJx-DH-ZSo"/>
                             <constraint firstItem="4Xu-T0-VeO" firstAttribute="top" secondItem="xHD-0d-ggT" secondAttribute="top" constant="10" id="tzK-5x-DVY"/>
                         </constraints>
