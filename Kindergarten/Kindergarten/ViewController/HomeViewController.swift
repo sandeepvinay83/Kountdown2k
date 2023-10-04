@@ -232,6 +232,13 @@ extension HomeViewController: UITableViewDelegate {
             default:
                 print("Cell not defined")
             }
+        } else if indexPath.section == 1 {
+            switch indexPath.row {
+            case 0:
+                self.performSegue(withIdentifier: "showSpeak", sender: nil)
+            default:
+                print("Cell not defined")
+            }
         }
     }
     
