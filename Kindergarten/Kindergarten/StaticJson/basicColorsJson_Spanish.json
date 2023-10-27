@@ -90,5 +90,9 @@
         }
       ]
     }
-  ]
+  ],
+  "Message": {
+      "success": "¡Impresionante! Lo hiciste. ¿Quieres jugar de nuevo?",
+      "fail": "Seleccionaste la respuesta incorrecta. ¡Intentar otra vez!"
+  }
 }

@@ -2,8 +2,6 @@
 //  BasicColorsViewController.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 15/09/23.
-//
 
 import UIKit
 
@@ -18,6 +16,8 @@ final class BasicColorsViewController: UIViewController {
     @IBOutlet weak var basicColorsTableView: UITableView!
     var basicColorsArray: [ClassifyModel]?
     private var currentArrayIndex: Int = 0
+    var messageModel: MessageModel?
+    var alertButtonTitleModel: AlertButtonModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,7 @@ final class BasicColorsViewController: UIViewController {
 
     /// Initialising the view
     private func initializeView() {
+        initialiseButton()
         updateUI()
     }
     
@@ -50,6 +51,11 @@ final class BasicColorsViewController: UIViewController {
     
     // MARK: - Other
     
+    private func initialiseButton() {
+        self.previousButton.setTitle(self.alertButtonTitleModel?.previous, for: .normal)
+        self.nextButton.setTitle(self.alertButtonTitleModel?.next, for: .normal)
+    }
+    
     private func updateUI() {
         self.headerLabel.text = self.basicColorsArray?[self.currentArrayIndex].header
         if let basicColorsArray = self.basicColorsArray {
@@ -57,11 +63,11 @@ final class BasicColorsViewController: UIViewController {
                 self.previousButton.isUserInteractionEnabled = false
             } else if self.currentArrayIndex == (basicColorsArray.count - 1) {
                 self.nextButton.isUserInteractionEnabled = false
-                self.nextButton.setTitle("Finish", for: .normal)
+                self.nextButton.setTitle(self.alertButtonTitleModel?.finish, for: .normal)
             } else {
                 self.previousButton.isUserInteractionEnabled = true
                 self.nextButton.isUserInteractionEnabled = true
-                self.nextButton.setTitle("Next", for: .normal)
+                self.nextButton.setTitle(self.alertButtonTitleModel?.next, for: .normal)
             }
         }
         self.basicColorsTableView.reloadData()
@@ -97,11 +103,11 @@ extension BasicColorsViewController: UITableViewDataSource {
 extension BasicColorsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if self.basicColorsArray?[self.currentArrayIndex].options[indexPath.row].answer == "0" {
-            AlertView().showAlertView(controller: self, title: "", message: "You selected wrong answer. Try again!")
+            AlertView().showAlertView(controller: self, title: "", message: self.messageModel?.fail ?? "", okButtonTitle: self.alertButtonTitleModel?.ok)
         } else {
-            AlertView().showAlertView(controller: self, title: "", message: "Awesome! You did it. Do you want to play again?", okButtonTitle: "Yes", cancelButtonTitle: "No", handler: { (action) in
-                if action.title == "No" {
-                } else if action.title == "Yes" {
+            AlertView().showAlertView(controller: self, title: "", message: self.messageModel?.success ?? "", okButtonTitle: self.alertButtonTitleModel?.yes, cancelButtonTitle: self.alertButtonTitleModel?.no, handler: { (action) in
+                if action.title == self.alertButtonTitleModel?.no {
+                } else if action.title == self.alertButtonTitleModel?.yes {
                     self.basicColorsTableView.reloadData()
                 }
             })

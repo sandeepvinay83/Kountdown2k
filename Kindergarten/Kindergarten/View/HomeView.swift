@@ -2,8 +2,6 @@
 //  HomeView.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 05/09/23.
-//
 
 import UIKit
 /*

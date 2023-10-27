@@ -2,8 +2,6 @@
 //  DifferenceItemViewController.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 14/09/23.
-//
 
 import UIKit
 
@@ -15,6 +13,8 @@ final class DifferenceItemViewController: UIViewController {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var differenceItemTableView: UITableView!
     var differenceModel: ClassifyModel?
+    var messageModel: MessageModel?
+    var alertButtonTitleModel: AlertButtonModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,12 +68,12 @@ extension DifferenceItemViewController: UITableViewDataSource {
 extension DifferenceItemViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if self.differenceModel?.options[indexPath.row].answer == "0" {
-            AlertView().showAlertView(controller: self, title: "", message: "You selected wrong answer. Try again!")
+            AlertView().showAlertView(controller: self, title: "", message: self.messageModel?.fail ?? "", okButtonTitle: self.alertButtonTitleModel?.ok)
         } else {
-            AlertView().showAlertView(controller: self, title: "", message: "Awesome! You did it. Do you want to play again?", okButtonTitle: "Yes", cancelButtonTitle: "No", handler: { (action) in
-                if action.title == "No" {
+            AlertView().showAlertView(controller: self, title: "", message: self.messageModel?.success ?? "", okButtonTitle: self.alertButtonTitleModel?.yes, cancelButtonTitle: self.alertButtonTitleModel?.no, handler: { (action) in
+                if action.title == self.alertButtonTitleModel?.no {
                     self.navigationController?.popViewController(animated: true)
-                } else if action.title == "Yes" {
+                } else if action.title == self.alertButtonTitleModel?.yes {
                     self.differenceItemTableView.reloadData()
                 }
             })

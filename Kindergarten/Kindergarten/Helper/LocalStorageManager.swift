@@ -2,8 +2,6 @@
 //  LocalStorageManager.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 08/09/23.
-//
 
 import Foundation
 

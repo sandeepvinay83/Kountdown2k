@@ -2,8 +2,6 @@
 //  AdditionViewController.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 21/09/23.
-//
 
 import UIKit
 
@@ -17,14 +15,21 @@ class AdditionViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     var additionArray: [ClassifyModel]?
     private var currentArrayIndex: Int = 0
+    var messageModel: MessageModel?
+    var alertButtonTitleModel: AlertButtonModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.updateUI()
+        initializeView()
     }
     
+    /// Initialising the view
+    private func initializeView() {
+        initialiseButton()
+        updateUI()
+    }
 
     /*
     // MARK: - Navigation
@@ -63,6 +68,11 @@ class AdditionViewController: UIViewController {
 
     // MARK: - Other
     
+    private func initialiseButton() {
+        self.previousButton.setTitle(self.alertButtonTitleModel?.previous, for: .normal)
+        self.nextButton.setTitle(self.alertButtonTitleModel?.next, for: .normal)
+    }
+    
     private func updateUI() {
         self.headerLabel.text = self.additionArray?[self.currentArrayIndex].header
         if let additionArray = self.additionArray {
@@ -70,11 +80,11 @@ class AdditionViewController: UIViewController {
                 self.previousButton.isUserInteractionEnabled = false
             } else if self.currentArrayIndex == (additionArray.count - 1) {
                 self.nextButton.isUserInteractionEnabled = false
-                self.nextButton.setTitle("Finish", for: .normal)
+                self.nextButton.setTitle(self.alertButtonTitleModel?.finish, for: .normal)
             } else {
                 self.previousButton.isUserInteractionEnabled = true
                 self.nextButton.isUserInteractionEnabled = true
-                self.nextButton.setTitle("Next", for: .normal)
+                self.nextButton.setTitle(self.alertButtonTitleModel?.next, for: .normal)
             }
             self.questionLabel.text = self.additionArray?[self.currentArrayIndex].title
             
@@ -91,14 +101,14 @@ class AdditionViewController: UIViewController {
     
     private func checkAnswer(answer: String) {
         if answer == "1" {
-            AlertView().showAlertView(controller: self, title: "", message: "Awesome! You did it. Do you want to play again?", okButtonTitle: "Yes", cancelButtonTitle: "Next", handler: { (action) in
-                if action.title == "Next" {
+            AlertView().showAlertView(controller: self, title: "", message: self.messageModel?.success ?? "", okButtonTitle: self.alertButtonTitleModel?.yes, cancelButtonTitle: self.alertButtonTitleModel?.next, handler: { (action) in
+                if action.title == self.alertButtonTitleModel?.next {
                     self.onNextButtonClick(self.nextButton)
-                } else if action.title == "Yes" {
+                } else if action.title == self.alertButtonTitleModel?.yes {
                 }
             })
         } else {
-            AlertView().showAlertView(controller: self, title: "", message: "You selected wrong answer. Try again!")
+            AlertView().showAlertView(controller: self, title: "", message: self.messageModel?.fail ?? "", okButtonTitle: self.alertButtonTitleModel?.ok)
         }
     }
 }

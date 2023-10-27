@@ -17,6 +17,7 @@
 		C143CD1E2AB9C48D002672C4 /* countSetsJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C143CD1C2AB9C48D002672C4 /* countSetsJson_English.json */; };
 		C143CD1F2AB9C48D002672C4 /* countSetsJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C143CD1D2AB9C48D002672C4 /* countSetsJson_Spanish.json */; };
 		C143CD212AB9D526002672C4 /* CountSetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143CD202AB9D526002672C4 /* CountSetsViewController.swift */; };
+		C14471B82ACDE3630002CFEA /* SpeakSentenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14471B72ACDE3630002CFEA /* SpeakSentenceViewController.swift */; };
 		C14680C72AA5FF06007852DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680C62AA5FF06007852DF /* AppDelegate.swift */; };
 		C14680C92AA5FF06007852DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680C82AA5FF06007852DF /* SceneDelegate.swift */; };
 		C14680CB2AA5FF06007852DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14680CA2AA5FF06007852DF /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		C143CD1C2AB9C48D002672C4 /* countSetsJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countSetsJson_English.json; sourceTree = "<group>"; };
 		C143CD1D2AB9C48D002672C4 /* countSetsJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countSetsJson_Spanish.json; sourceTree = "<group>"; };
 		C143CD202AB9D526002672C4 /* CountSetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSetsViewController.swift; sourceTree = "<group>"; };
+		C14471B72ACDE3630002CFEA /* SpeakSentenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakSentenceViewController.swift; sourceTree = "<group>"; };
 		C14680C32AA5FF06007852DF /* Kindergarten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindergarten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14680C62AA5FF06007852DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14680C82AA5FF06007852DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				C150F8322ABDC60C00C0DAF2 /* LoginViewController.swift */,
 				C150F8342ABDD1DB00C0DAF2 /* SignupViewController.swift */,
 				C1E98A002ABEF1D9001F9B69 /* ProfileViewController.swift */,
+				C14471B72ACDE3630002CFEA /* SpeakSentenceViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				C100CB0F2AB33B21001B621D /* DifferenceItemViewController.swift in Sources */,
 				C18356882AB0DEF800A0BD7E /* ClassifyItemCell.swift in Sources */,
 				C14680C92AA5FF06007852DF /* SceneDelegate.swift in Sources */,
+				C14471B82ACDE3630002CFEA /* SpeakSentenceViewController.swift in Sources */,
 				C1AFE6E12AA7443F00E28B87 /* HomeView.swift in Sources */,
 				C1BE5E9C2AAB9A9600B18473 /* KindergartenWebservice.swift in Sources */,
 				C1AFE6DF2AA7442F00E28B87 /* HomeViewController.swift in Sources */,

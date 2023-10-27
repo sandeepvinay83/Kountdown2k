@@ -2,8 +2,6 @@
 //  HomeViewController.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 05/09/23.
-//
 
 import UIKit
 
@@ -36,7 +34,8 @@ final class HomeViewController: UIViewController {
         self.loadMaincategoryData()
         self.mainCategoryTableView.sectionFooterHeight = 0.0
         print(mainCategoryArray ?? "")
-        navigationItem.title = "KOUNTDOWN2K"
+//        navigationItem.title = "KOUNTDOWN2K"
+        navigationItem.addLogo()
         navigationItem.addLanguageSegmentedControl(target: self, selector: #selector(self.segmentedValueChanged(_:)))
         navigationItem.addProfileButton(target: self, selector: #selector(self.profileClicked(_:)))
     }
@@ -48,22 +47,40 @@ final class HomeViewController: UIViewController {
             guard let destinationViewController = segue.destination as? BasicColorsViewController else {
                 return
             }
-            destinationViewController.basicColorsArray = self.loadBasicColorsData()
+            var messageModel: MessageModel?
+            var alertButtonTitleModel: AlertButtonModel?
+            destinationViewController.basicColorsArray = self.loadBasicColorsData(messageModel: &messageModel, alertButtonTitleModel: &alertButtonTitleModel)
+            destinationViewController.messageModel = messageModel
+            destinationViewController.alertButtonTitleModel = alertButtonTitleModel
         } else if segue.identifier == Constants.kSegueKey.eShowIdentifyShape.rawValue {
             guard let destinationViewController = segue.destination as? IdentifyShapeViewController else {
                 return
             }
-            destinationViewController.identifyShapeArray = self.loadIdentifyShapeData()
+            var messageModel: MessageModel?
+            var alertButtonTitleModel: AlertButtonModel?
+            destinationViewController.identifyShapeArray = self.loadIdentifyShapeData(messageModel: &messageModel, alertButtonTitleModel: &alertButtonTitleModel)
+            destinationViewController.messageModel = messageModel
+            destinationViewController.alertButtonTitleModel = alertButtonTitleModel
         } else if segue.identifier == Constants.kSegueKey.eShowCountSets.rawValue {
             guard let destinationViewController = segue.destination as? CountSetsViewController else {
                 return
             }
-            destinationViewController.countSetsArray = self.loadCountSetsData()
+//            destinationViewController.countSetsArray = self.loadCountSetsData()
+            var messageModel: MessageModel?
+            var alertButtonTitleModel: AlertButtonModel?
+            destinationViewController.countSetsArray = self.loadCountSetsData(messageModel: &messageModel, alertButtonTitleModel: &alertButtonTitleModel)
+            destinationViewController.messageModel = messageModel
+            destinationViewController.alertButtonTitleModel = alertButtonTitleModel
         } else if segue.identifier == Constants.kSegueKey.eShowAddition.rawValue {
             guard let destinationViewController = segue.destination as? AdditionViewController else {
                 return
             }
-            destinationViewController.additionArray = self.loadAdditionData()
+//            destinationViewController.additionArray = self.loadAdditionData()
+            var messageModel: MessageModel?
+            var alertButtonTitleModel: AlertButtonModel?
+            destinationViewController.additionArray = self.loadAdditionData(messageModel: &messageModel, alertButtonTitleModel: &alertButtonTitleModel)
+            destinationViewController.messageModel = messageModel
+            destinationViewController.alertButtonTitleModel = alertButtonTitleModel
         }
     }
     
@@ -108,70 +125,150 @@ final class HomeViewController: UIViewController {
         }
     }
     
-    private func loadBasicColorsData() -> [ClassifyModel]? {
+    private func loadBasicColorsData(messageModel: inout MessageModel?, alertButtonTitleModel: inout AlertButtonModel?) -> [ClassifyModel]? {
         let kindergartenWebservice = KindergartenWebservice()
         if LocalStorageManager.shared.selectedLanguage == Constants.kLanguageKey.eEnglish.rawValue {
             kindergartenWebservice.basicColorsApi_English()
             guard let basicColorsModel: BasicColorsResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .BasicColorsJson_English) else {
                 return nil
             }
+            messageModel = MessageModel()
+            messageModel?.success = basicColorsModel.message?.success
+            messageModel?.fail = basicColorsModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_English.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_English.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_English.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_English.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_English.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_English.ePrevious.rawValue
             return basicColorsModel.basicColorsArray
         } else {
             kindergartenWebservice.basicColorsApi_Spanish()
             guard let basicColorsModel: BasicColorsResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .BasicColorsJson_Spanish) else {
                 return nil
             }
+            messageModel = MessageModel()
+            messageModel?.success = basicColorsModel.message?.success
+            messageModel?.fail = basicColorsModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_Spanish.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_Spanish.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_Spanish.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_Spanish.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_Spanish.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_Spanish.ePrevious.rawValue
             return basicColorsModel.basicColorsArray
         }
     }
     
-    private func loadIdentifyShapeData() -> [ClassifyModel]? {
+    private func loadIdentifyShapeData(messageModel: inout MessageModel?, alertButtonTitleModel: inout AlertButtonModel?) -> [ClassifyModel]? {
         let kindergartenWebservice = KindergartenWebservice()
         if LocalStorageManager.shared.selectedLanguage == Constants.kLanguageKey.eEnglish.rawValue {
             kindergartenWebservice.identifyShapeApi_English()
             guard let identifyShapeModel: IdentifyShapeResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .IdentifyShapeJson_English) else {
                 return nil
             }
+            messageModel = MessageModel()
+            messageModel?.success = identifyShapeModel.message?.success
+            messageModel?.fail = identifyShapeModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_English.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_English.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_English.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_English.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_English.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_English.ePrevious.rawValue
             return identifyShapeModel.identifyShapeArray
         } else {
             kindergartenWebservice.identifyShapeApi_Spanish()
             guard let identifyShapeModel: IdentifyShapeResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .IdentifyShapeJson_Spanish) else {
                 return nil
             }
+            messageModel = MessageModel()
+            messageModel?.success = identifyShapeModel.message?.success
+            messageModel?.fail = identifyShapeModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_Spanish.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_Spanish.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_Spanish.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_Spanish.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_Spanish.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_Spanish.ePrevious.rawValue
             return identifyShapeModel.identifyShapeArray
         }
     }
     
-    private func loadCountSetsData() -> [ClassifyModel]? {
+    private func loadCountSetsData(messageModel: inout MessageModel?, alertButtonTitleModel: inout AlertButtonModel?) -> [ClassifyModel]? {
         let kindergartenWebservice = KindergartenWebservice()
         if LocalStorageManager.shared.selectedLanguage == Constants.kLanguageKey.eEnglish.rawValue {
             kindergartenWebservice.countSetsApi_English()
             guard let countSetsModel: CountSetsResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .CountSetsJson_English) else {
                 return nil
             }
+            messageModel = MessageModel()
+            messageModel?.success = countSetsModel.message?.success
+            messageModel?.fail = countSetsModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_English.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_English.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_English.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_English.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_English.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_English.ePrevious.rawValue
             return countSetsModel.countSetsArray
         } else {
             kindergartenWebservice.countSetsApi_Spanish()
             guard let countSetsModel: CountSetsResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .CountSetsJson_Spanish) else {
                 return nil
             }
+            messageModel = MessageModel()
+            messageModel?.success = countSetsModel.message?.success
+            messageModel?.fail = countSetsModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_Spanish.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_Spanish.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_Spanish.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_Spanish.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_Spanish.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_Spanish.ePrevious.rawValue
             return countSetsModel.countSetsArray
         }
     }
     
-    private func loadAdditionData() -> [ClassifyModel]? {
+    private func loadAdditionData(messageModel: inout MessageModel?, alertButtonTitleModel: inout AlertButtonModel?) -> [ClassifyModel]? {
         let kindergartenWebservice = KindergartenWebservice()
         if LocalStorageManager.shared.selectedLanguage == Constants.kLanguageKey.eEnglish.rawValue {
             kindergartenWebservice.additionApi_English()
             guard let additionModel: AdditionResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .AdditionJson_English) else {
                 return nil
             }
+            messageModel = MessageModel()
+            messageModel?.success = additionModel.message?.success
+            messageModel?.fail = additionModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_English.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_English.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_English.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_English.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_English.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_English.ePrevious.rawValue
             return additionModel.additionArray
         } else {
             kindergartenWebservice.additionApi_Spanish()
             guard let additionModel: AdditionResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .AdditionJson_Spanish) else {
                 return nil
             }
+            messageModel = MessageModel()
+            messageModel?.success = additionModel.message?.success
+            messageModel?.fail = additionModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_Spanish.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_Spanish.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_Spanish.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_Spanish.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_Spanish.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_Spanish.ePrevious.rawValue
             return additionModel.additionArray
         }
     }
@@ -229,6 +326,13 @@ extension HomeViewController: UITableViewDelegate {
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowCountSets.rawValue, sender: nil)
             case 6:
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowAddition.rawValue, sender: nil)
+            default:
+                print("Cell not defined")
+            }
+        } else if indexPath.section == 1 {
+            switch indexPath.row {
+            case 0:
+                self.performSegue(withIdentifier: "showSpeak", sender: nil)
             default:
                 print("Cell not defined")
             }

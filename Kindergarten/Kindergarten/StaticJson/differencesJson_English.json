@@ -104,5 +104,9 @@
         }
       ]
     }
-  ]
+  ],
+  "Message": {
+      "success": "Awesome! You did it. Do you want to play again?",
+      "fail": "You selected wrong answer. Try again!"
+  }
 }

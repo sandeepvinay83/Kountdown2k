@@ -2,8 +2,6 @@
 //  OverrideExtensions.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 10/09/23.
-//
 
 import UIKit
 
@@ -27,5 +25,14 @@ extension UINavigationItem {
         let newBackButton = UIBarButtonItem(image: backImage, style: UIBarButtonItem.Style.plain, target: target, action: selector)
         newBackButton.tintColor = UIColor.lightGray
         self.leftBarButtonItem = newBackButton
+    }
+    
+    // Ads logo at navigation title
+    func addLogo() {
+        let logoImage = UIImage(named: "logo")
+        let logoImageView = UIImageView()
+        logoImageView.image = logoImage
+        logoImageView.contentMode = .scaleAspectFit
+        self.titleView = logoImageView
     }
 }

@@ -2,8 +2,6 @@
 //  DifferenceViewController.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 14/09/23.
-//
 
 import UIKit
 
@@ -14,6 +12,8 @@ enum kDifferenceTexts: String {
 final class DifferenceViewController: UIViewController {
     @IBOutlet weak var differenceTableView: UITableView!
     private var differenceArray: [ClassifyModel]?
+    private var messageModel: MessageModel?
+    private var alertButtonTitleModel: AlertButtonModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +42,8 @@ final class DifferenceViewController: UIViewController {
             return
         }
         destinationViewController.differenceModel = sender as? ClassifyModel
+        destinationViewController.messageModel = self.messageModel
+        destinationViewController.alertButtonTitleModel = self.alertButtonTitleModel
     }
     
     // MARK: - Action methods
@@ -56,12 +58,26 @@ final class DifferenceViewController: UIViewController {
                 return
             }
             differenceArray = differenceModel.differenceArray
+            messageModel = MessageModel()
+            messageModel?.success = differenceModel.message?.success
+            messageModel?.fail = differenceModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_English.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_English.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_English.eOk.rawValue
         } else {
             kindergartenWebservice.differenceApi_Spanish()
             guard let differenceModel: DifferenceResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .DifferenceJson_Spanish) else {
                 return
             }
             differenceArray = differenceModel.differenceArray
+            messageModel = MessageModel()
+            messageModel?.success = differenceModel.message?.success
+            messageModel?.fail = differenceModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_Spanish.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_Spanish.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_Spanish.eOk.rawValue
         }
     }
 }
