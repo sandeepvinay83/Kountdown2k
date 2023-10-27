@@ -2,8 +2,6 @@
 //  SceneDelegate.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 04/09/23.
-//
 
 import UIKit
 

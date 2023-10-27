@@ -2,8 +2,6 @@
 //  MainCategoryTableHeaderView.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 06/09/23.
-//
 
 import UIKit
 

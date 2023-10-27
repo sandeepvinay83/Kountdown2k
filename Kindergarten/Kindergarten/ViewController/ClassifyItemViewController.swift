@@ -2,8 +2,6 @@
 //  ClassifyItemViewController.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 11/09/23.
-//
 
 import UIKit
 
@@ -16,11 +14,8 @@ final class ClassifyItemViewController: UIViewController {
     var classifyModel: ClassifyModel?
     var selectedRows = [Int]()
     var totalCorrectAnswers : Int?
-    var successMessage: String?
-    var failMessage: String?
-    var alertButtonYesTitle: String?
-    var alertButtonNoTitle: String?
-    var alertButtonOkTitle: String?
+    var messageModel: MessageModel?
+    var alertButtonTitleModel: AlertButtonModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +89,7 @@ extension ClassifyItemViewController: UITableViewDataSource {
 extension ClassifyItemViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if self.classifyModel?.options[indexPath.row].answer == "0" {
-            AlertView().showAlertView(controller: self, title: "", message: self.failMessage ?? "", okButtonTitle: self.alertButtonOkTitle)
+            AlertView().showAlertView(controller: self, title: "", message: self.messageModel?.fail ?? "", okButtonTitle: self.alertButtonTitleModel?.ok)
         } else {
             if let index = self.selectedRows.firstIndex(where: { (item) in
                 if item == indexPath.row {
@@ -109,10 +104,10 @@ extension ClassifyItemViewController: UITableViewDelegate {
             self.classifyItemTableView.reloadData()
             
             if self.selectedRows.count == self.totalCorrectAnswers {
-                AlertView().showAlertView(controller: self, title: "", message: self.successMessage ?? "", okButtonTitle: self.alertButtonYesTitle, cancelButtonTitle: self.alertButtonNoTitle, handler: { (action) in
-                    if action.title == self.alertButtonNoTitle {
+                AlertView().showAlertView(controller: self, title: "", message: self.messageModel?.success ?? "", okButtonTitle: self.alertButtonTitleModel?.yes, cancelButtonTitle: self.alertButtonTitleModel?.no, handler: { (action) in
+                    if action.title == self.alertButtonTitleModel?.no {
                         self.navigationController?.popViewController(animated: true)
-                    } else if action.title == self.alertButtonYesTitle {
+                    } else if action.title == self.alertButtonTitleModel?.yes {
                         self.selectedRows.removeAll()
                         self.classifyItemTableView.reloadData()
                     }

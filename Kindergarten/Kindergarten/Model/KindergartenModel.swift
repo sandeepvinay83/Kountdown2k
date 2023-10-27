@@ -2,8 +2,6 @@
 //  KindergartenModel.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 08/09/23.
-//
 
 import Foundation
 
@@ -64,8 +62,10 @@ struct OptionModel: Codable {
 
 struct DifferenceResponseModel: Codable {
     var differenceArray: [ClassifyModel]
+    var message: MessageModel?
     private enum CodingKeys: String, CodingKey {
         case differenceArray = "Difference"
+        case message = "Message"
     }
 }
 
@@ -73,8 +73,10 @@ struct DifferenceResponseModel: Codable {
 
 struct BasicColorsResponseModel: Codable {
     var basicColorsArray: [ClassifyModel]
+    var message: MessageModel?
     private enum CodingKeys: String, CodingKey {
         case basicColorsArray = "BasicColors"
+        case message = "Message"
     }
 }
 
@@ -82,8 +84,10 @@ struct BasicColorsResponseModel: Codable {
 
 struct IdentifyShapeResponseModel: Codable {
     var identifyShapeArray: [ClassifyModel]
+    var message: MessageModel?
     private enum CodingKeys: String, CodingKey {
         case identifyShapeArray = "IdentifyShape"
+        case message = "Message"
     }
 }
 
@@ -91,8 +95,10 @@ struct IdentifyShapeResponseModel: Codable {
 
 struct CountSetsResponseModel: Codable {
     var countSetsArray: [ClassifyModel]
+    var message: MessageModel?
     private enum CodingKeys: String, CodingKey {
         case countSetsArray = "CountSets"
+        case message = "Message"
     }
 }
 
@@ -100,8 +106,10 @@ struct CountSetsResponseModel: Codable {
 
 struct AdditionResponseModel: Codable {
     var additionArray: [ClassifyModel]
+    var message: MessageModel?
     private enum CodingKeys: String, CodingKey {
         case additionArray = "Addition"
+        case message = "Message"
     }
 }
 
@@ -137,3 +145,25 @@ struct MessageModel: Codable {
         case fail = "fail"
     }
 }
+
+// MARK: - Alert Button Model
+
+struct AlertButtonModel {
+    var ok: String?
+    var yes: String?
+    var no: String?
+    var next: String?
+    var finish: String?
+    var previous: String?
+}
+
+//struct AlertButtonModel: Codable {
+//    var ok: String?
+//    var yes: String?
+//    var no: String?
+//    private enum CodingKeys: String, CodingKey {
+//        case ok = "ok"
+//        case yes = "yes"
+//        case no = "no"
+//    }
+//}

@@ -2,8 +2,6 @@
 //  ProfileViewController.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 23/09/23.
-//
 
 import UIKit
 

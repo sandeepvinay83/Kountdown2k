@@ -2,8 +2,6 @@
 //  SignupViewController.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 22/09/23.
-//
 
 import UIKit
 

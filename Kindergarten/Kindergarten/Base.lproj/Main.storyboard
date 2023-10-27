@@ -822,6 +822,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SvB-gC-5X2">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hCQ-Mz-vii">
+                                <rect key="frame" x="10" y="30" width="373" height="213"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaI-0d-YGH">
                                 <rect key="frame" x="19.666666666666657" y="360.66666666666669" width="353.66666666666674" height="200.00000000000006"/>
                                 <subviews>
@@ -906,8 +909,12 @@
                             <constraint firstItem="yaI-0d-YGH" firstAttribute="width" secondItem="7I4-9B-f67" secondAttribute="width" multiplier="0.9" id="F2K-3H-xLt"/>
                             <constraint firstAttribute="bottom" secondItem="SvB-gC-5X2" secondAttribute="bottom" id="N4e-sk-3rU"/>
                             <constraint firstItem="yaI-0d-YGH" firstAttribute="centerX" secondItem="AQ5-I6-Uju" secondAttribute="centerX" id="Rwb-Kz-Xg1"/>
+                            <constraint firstItem="hCQ-Mz-vii" firstAttribute="height" secondItem="7I4-9B-f67" secondAttribute="height" multiplier="0.25" id="bY2-UU-zTt"/>
                             <constraint firstItem="SvB-gC-5X2" firstAttribute="top" secondItem="7I4-9B-f67" secondAttribute="top" id="e40-EO-o8O"/>
+                            <constraint firstItem="hCQ-Mz-vii" firstAttribute="leading" secondItem="7I4-9B-f67" secondAttribute="leading" constant="10" id="iaG-o7-MSr"/>
                             <constraint firstItem="AQ5-I6-Uju" firstAttribute="trailing" secondItem="SvB-gC-5X2" secondAttribute="trailing" id="lRT-FL-DhF"/>
+                            <constraint firstAttribute="trailing" secondItem="hCQ-Mz-vii" secondAttribute="trailing" constant="10" id="nz1-xc-4by"/>
+                            <constraint firstItem="hCQ-Mz-vii" firstAttribute="top" secondItem="7I4-9B-f67" secondAttribute="top" constant="30" id="q8x-E5-Gga"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6ec-FD-W5I"/>
@@ -1088,7 +1095,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwP-Au-hmg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="-164"/>
+            <point key="canvasLocation" x="1518" y="-134"/>
         </scene>
         <!--Addition View Controller-->
         <scene sceneID="8Er-q3-MPe">
@@ -1263,6 +1270,7 @@
         <image name="background" width="853.33331298828125" height="533.33331298828125"/>
         <image name="bus" width="275.33334350585938" height="198"/>
         <image name="kidsBg1" width="1141.6666259765625" height="826.66668701171875"/>
+        <image name="logo" width="177.33332824707031" height="122.66666412353516"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

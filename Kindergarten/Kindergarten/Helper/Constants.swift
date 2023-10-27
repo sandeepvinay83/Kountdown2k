@@ -2,8 +2,6 @@
 //  Constants.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 10/09/23.
-//
 
 import Foundation
 
@@ -41,6 +39,9 @@ class Constants {
         case eYes = "Yes"
         case eNo = "No"
         case eOk = "Ok"
+        case eNext = "Next"
+        case eFinish = "Finish"
+        case ePrevious = "Previous"
     }
     
     // Alert button title Spanish
@@ -48,5 +49,8 @@ class Constants {
         case eYes = "Sí"
         case eNo = "No"
         case eOk = "De acuerdo"
+        case eNext = "Próxima"
+        case eFinish = "Finalizar"
+        case ePrevious = "Previa"
     }
 }

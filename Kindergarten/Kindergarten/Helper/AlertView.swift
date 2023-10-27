@@ -2,8 +2,6 @@
 //  AlertView.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 13/09/23.
-//
 
 import UIKit
 

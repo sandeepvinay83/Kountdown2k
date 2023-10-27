@@ -2,8 +2,6 @@
 //  ClassifyItemCell.swift
 //  Kindergarten
 //
-//  Created by Sandeep Vinay on 12/09/23.
-//
 
 import UIKit
 
