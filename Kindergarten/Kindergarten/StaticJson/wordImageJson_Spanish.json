@@ -1,7 +1,7 @@
 {
     "WordImage": [
       {
-        "title": "Cell Phone",
+        "title": "Teléfono móvil",
         "imageName" : "",
         "header": "¿Es esta PALABRA o IMAGEN?",
         "options": [
@@ -31,7 +31,7 @@
         ]
       },
       {
-        "title": "Treasure",
+        "title": "Tesoro",
         "imageName" : "",
         "header": "¿Es esta PALABRA o IMAGEN?",
         "options": [
@@ -76,7 +76,7 @@
         ]
       },
       {
-        "title": "Motorcycle",
+        "title": "Motocicleta",
         "imageName" : "",
         "header": "¿Es esta PALABRA o IMAGEN?",
         "options": [
