@@ -81,6 +81,16 @@ final class HomeViewController: UIViewController {
             destinationViewController.additionArray = self.loadAdditionData(messageModel: &messageModel, alertButtonTitleModel: &alertButtonTitleModel)
             destinationViewController.messageModel = messageModel
             destinationViewController.alertButtonTitleModel = alertButtonTitleModel
+        } else if segue.identifier == Constants.kSegueKey.eShowWordImage.rawValue {
+            guard let destinationViewController = segue.destination as? WordImageViewController else {
+                return
+            }
+//            destinationViewController.additionArray = self.loadAdditionData()
+            var messageModel: MessageModel?
+            var alertButtonTitleModel: AlertButtonModel?
+            destinationViewController.wordImageArray = self.loadWordImageData(messageModel: &messageModel, alertButtonTitleModel: &alertButtonTitleModel)
+            destinationViewController.messageModel = messageModel
+            destinationViewController.alertButtonTitleModel = alertButtonTitleModel
         }
     }
     
@@ -272,6 +282,43 @@ final class HomeViewController: UIViewController {
             return additionModel.additionArray
         }
     }
+    
+    private func loadWordImageData(messageModel: inout MessageModel?, alertButtonTitleModel: inout AlertButtonModel?) -> [ClassifyModel]? {
+        let kindergartenWebservice = KindergartenWebservice()
+        if LocalStorageManager.shared.selectedLanguage == Constants.kLanguageKey.eEnglish.rawValue {
+            kindergartenWebservice.wordImageApi_English()
+            guard let wordImageModel: WordImageResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .WordImageJson_English) else {
+                return nil
+            }
+            messageModel = MessageModel()
+            messageModel?.success = wordImageModel.message?.success
+            messageModel?.fail = wordImageModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_English.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_English.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_English.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_English.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_English.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_English.ePrevious.rawValue
+            return wordImageModel.wordImageArray
+        } else {
+            kindergartenWebservice.wordImageApi_Spanish()
+            guard let wordImageModel: WordImageResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .WordImageJson_Spanish) else {
+                return nil
+            }
+            messageModel = MessageModel()
+            messageModel?.success = wordImageModel.message?.success
+            messageModel?.fail = wordImageModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_Spanish.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_Spanish.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_Spanish.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_Spanish.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_Spanish.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_Spanish.ePrevious.rawValue
+            return wordImageModel.wordImageArray
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -333,6 +380,8 @@ extension HomeViewController: UITableViewDelegate {
             switch indexPath.row {
             case 0:
                 self.performSegue(withIdentifier: "showSpeak", sender: nil)
+            case 3:
+                self.performSegue(withIdentifier: "showWordImage", sender: nil)
             default:
                 print("Cell not defined")
             }

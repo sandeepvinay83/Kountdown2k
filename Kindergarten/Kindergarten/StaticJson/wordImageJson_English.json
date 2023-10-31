@@ -1,0 +1,128 @@
+{
+  "WordImage": [
+    {
+      "title": "Cell Phone",
+      "imageName" : "",
+      "header": "Is this WORD or PICTURE?",
+      "options": [
+        {
+          "title":"Word",
+          "answer": "1"
+        },
+        {
+          "title": "Picture",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "imageName" : "airplane",
+      "header": "Is this WORD or PICTURE?",
+      "options": [
+        {
+          "title":"Word",
+          "answer": "0"
+        },
+        {
+          "title": "Picture",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "Treasure",
+      "imageName" : "",
+      "header": "Is this WORD or PICTURE?",
+      "options": [
+        {
+          "title":"Word",
+          "answer": "1"
+        },
+        {
+          "title": "Picture",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "imageName" : "house",
+      "header": "Is this WORD or PICTURE?",
+      "options": [
+        {
+          "title":"Word",
+          "answer": "0"
+        },
+        {
+          "title": "Picture",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "imageName" : "elephant",
+      "header": "Is this WORD or PICTURE?",
+      "options": [
+        {
+          "title":"Word",
+          "answer": "0"
+        },
+        {
+          "title": "Picture",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "Motorcycle",
+      "imageName" : "",
+      "header": "Is this WORD or PICTURE?",
+      "options": [
+        {
+          "title":"Word",
+          "answer": "1"
+        },
+        {
+          "title": "Picture",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "Animal",
+      "imageName" : "",
+      "header": "Is this WORD or PICTURE?",
+      "options": [
+        {
+          "title":"Word",
+          "answer": "1"
+        },
+        {
+          "title": "Picture",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "imageName" : "mango",
+      "header": "Is this WORD or PICTURE?",
+      "options": [
+        {
+          "title":"Word",
+          "answer": "0"
+        },
+        {
+          "title": "Picture",
+          "answer": "1"
+        }
+      ]
+    }
+  ],
+  "Message": {
+      "success": "Awesome! You did it. Do you want to play again?",
+      "fail": "You selected wrong answer. Try again!"
+  }
+}

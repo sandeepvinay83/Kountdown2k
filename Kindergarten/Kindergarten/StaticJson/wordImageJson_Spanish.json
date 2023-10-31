@@ -1,0 +1,128 @@
+{
+    "WordImage": [
+      {
+        "title": "Cell Phone",
+        "imageName" : "",
+        "header": "¿Es esta PALABRA o IMAGEN?",
+        "options": [
+          {
+            "title":"Palabra",
+            "answer": "1"
+          },
+          {
+            "title": "Imagen",
+            "answer": "0"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "imageName" : "airplane",
+        "header": "¿Es esta PALABRA o IMAGEN?",
+        "options": [
+          {
+            "title":"Palabra",
+            "answer": "0"
+          },
+          {
+            "title": "Imagen",
+            "answer": "1"
+          }
+        ]
+      },
+      {
+        "title": "Treasure",
+        "imageName" : "",
+        "header": "¿Es esta PALABRA o IMAGEN?",
+        "options": [
+          {
+            "title":"Palabra",
+            "answer": "1"
+          },
+          {
+            "title": "Imagen",
+            "answer": "0"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "imageName" : "house",
+        "header": "¿Es esta PALABRA o IMAGEN?",
+        "options": [
+          {
+            "title":"Palabra",
+            "answer": "0"
+          },
+          {
+            "title": "Imagen",
+            "answer": "1"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "imageName" : "elephant",
+        "header": "¿Es esta PALABRA o IMAGEN?",
+        "options": [
+          {
+            "title":"Palabra",
+            "answer": "0"
+          },
+          {
+            "title": "Imagen",
+            "answer": "1"
+          }
+        ]
+      },
+      {
+        "title": "Motorcycle",
+        "imageName" : "",
+        "header": "¿Es esta PALABRA o IMAGEN?",
+        "options": [
+          {
+            "title":"Palabra",
+            "answer": "1"
+          },
+          {
+            "title": "Imagen",
+            "answer": "0"
+          }
+        ]
+      },
+      {
+        "title": "Animal",
+        "imageName" : "",
+        "header": "¿Es esta PALABRA o IMAGEN?",
+        "options": [
+          {
+            "title":"Palabra",
+            "answer": "1"
+          },
+          {
+            "title": "Imagen",
+            "answer": "0"
+          }
+        ]
+      },
+      {
+        "title": "",
+        "imageName" : "mango",
+        "header": "¿Es esta PALABRA o IMAGEN?",
+        "options": [
+          {
+            "title":"Palabra",
+            "answer": "0"
+          },
+          {
+            "title": "Imagen",
+            "answer": "1"
+          }
+        ]
+      }
+    ],
+    "Message": {
+      "success": "¡Impresionante! Lo hiciste. ¿Quieres jugar de nuevo?",
+      "fail": "Seleccionaste la respuesta incorrecta. ¡Intentar otra vez!"
+  }
+}

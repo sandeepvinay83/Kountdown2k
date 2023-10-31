@@ -12,6 +12,9 @@
 		C100CB0B2AB321D3001B621D /* differencesJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C100CB0A2AB321D3001B621D /* differencesJson_Spanish.json */; };
 		C100CB0D2AB322C5001B621D /* DifferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100CB0C2AB322C5001B621D /* DifferenceViewController.swift */; };
 		C100CB0F2AB33B21001B621D /* DifferenceItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100CB0E2AB33B21001B621D /* DifferenceItemViewController.swift */; };
+		C10BF15A2AEFAC92003617CC /* wordImageJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C10BF1582AEFAC92003617CC /* wordImageJson_English.json */; };
+		C10BF15B2AEFAC92003617CC /* wordImageJson_Spanish.json in Resources */ = {isa = PBXBuildFile; fileRef = C10BF1592AEFAC92003617CC /* wordImageJson_Spanish.json */; };
+		C10BF15D2AEFE0AC003617CC /* WordImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BF15C2AEFE0AC003617CC /* WordImageViewController.swift */; };
 		C11C2FBE2AADB7AB00F72733 /* OverrideExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */; };
 		C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C2FBF2AADBBF800F72733 /* Constants.swift */; };
 		C143CD1E2AB9C48D002672C4 /* countSetsJson_English.json in Resources */ = {isa = PBXBuildFile; fileRef = C143CD1C2AB9C48D002672C4 /* countSetsJson_English.json */; };
@@ -58,6 +61,9 @@
 		C100CB0A2AB321D3001B621D /* differencesJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = differencesJson_Spanish.json; sourceTree = "<group>"; };
 		C100CB0C2AB322C5001B621D /* DifferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceViewController.swift; sourceTree = "<group>"; };
 		C100CB0E2AB33B21001B621D /* DifferenceItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferenceItemViewController.swift; sourceTree = "<group>"; };
+		C10BF1582AEFAC92003617CC /* wordImageJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wordImageJson_English.json; sourceTree = "<group>"; };
+		C10BF1592AEFAC92003617CC /* wordImageJson_Spanish.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wordImageJson_Spanish.json; sourceTree = "<group>"; };
+		C10BF15C2AEFE0AC003617CC /* WordImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordImageViewController.swift; sourceTree = "<group>"; };
 		C11C2FBD2AADB7AB00F72733 /* OverrideExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideExtensions.swift; sourceTree = "<group>"; };
 		C11C2FBF2AADBBF800F72733 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C143CD1C2AB9C48D002672C4 /* countSetsJson_English.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countSetsJson_English.json; sourceTree = "<group>"; };
@@ -175,6 +181,7 @@
 				C150F8342ABDD1DB00C0DAF2 /* SignupViewController.swift */,
 				C1E98A002ABEF1D9001F9B69 /* ProfileViewController.swift */,
 				C14471B72ACDE3630002CFEA /* SpeakSentenceViewController.swift */,
+				C10BF15C2AEFE0AC003617CC /* WordImageViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -208,6 +215,8 @@
 		C1BE5E912AAB924000B18473 /* StaticJson */ = {
 			isa = PBXGroup;
 			children = (
+				C10BF1582AEFAC92003617CC /* wordImageJson_English.json */,
+				C10BF1592AEFAC92003617CC /* wordImageJson_Spanish.json */,
 				C1F3815F2ABC5D100089D1B2 /* additionJson_English.json */,
 				C1F381602ABC5D100089D1B2 /* additionJson_Spanish.json */,
 				C143CD1C2AB9C48D002672C4 /* countSetsJson_English.json */,
@@ -309,11 +318,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1F381612ABC5D100089D1B2 /* additionJson_English.json in Resources */,
+				C10BF15B2AEFAC92003617CC /* wordImageJson_Spanish.json in Resources */,
 				C14680D32AA5FF08007852DF /* LaunchScreen.storyboard in Resources */,
 				C14680D02AA5FF08007852DF /* Assets.xcassets in Resources */,
 				C1F381622ABC5D100089D1B2 /* additionJson_Spanish.json in Resources */,
 				C100CB0B2AB321D3001B621D /* differencesJson_Spanish.json in Resources */,
 				C143CD1E2AB9C48D002672C4 /* countSetsJson_English.json in Resources */,
+				C10BF15A2AEFAC92003617CC /* wordImageJson_English.json in Resources */,
 				C100CB072AB30DA8001B621D /* differencesJson_English.json in Resources */,
 				C1A8FC7C2AAF533F002940F6 /* mainCategoryJson_English.json in Resources */,
 				C143CD1F2AB9C48D002672C4 /* countSetsJson_Spanish.json in Resources */,
@@ -349,6 +360,7 @@
 				C14680C92AA5FF06007852DF /* SceneDelegate.swift in Sources */,
 				C14471B82ACDE3630002CFEA /* SpeakSentenceViewController.swift in Sources */,
 				C1AFE6E12AA7443F00E28B87 /* HomeView.swift in Sources */,
+				C10BF15D2AEFE0AC003617CC /* WordImageViewController.swift in Sources */,
 				C1BE5E9C2AAB9A9600B18473 /* KindergartenWebservice.swift in Sources */,
 				C1AFE6DF2AA7442F00E28B87 /* HomeViewController.swift in Sources */,
 				319D70622AAEAC6500CAC5D8 /* ClassifyViewController.swift in Sources */,
