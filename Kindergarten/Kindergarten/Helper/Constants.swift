@@ -29,6 +29,7 @@ class Constants {
         case eShowIdentifyShape = "showIdentifyShape"
         case eShowCountSets = "showCountSets"
         case eShowAddition = "showAddition"
+        case eShowSubtraction = "showSubtraction"
         case eShowHome = "showHome"
         case eShowSignup = "showSignup"
         case eShowProfile = "showProfile"

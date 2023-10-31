@@ -113,6 +113,17 @@ struct AdditionResponseModel: Codable {
     }
 }
 
+// MARK: - Subtraction Model
+
+struct SubtractionResponseModel: Codable {
+    var subtractionArray: [ClassifyModel]
+    var message: MessageModel?
+    private enum CodingKeys: String, CodingKey {
+        case subtractionArray = "Subtraction"
+        case message = "Message"
+    }
+}
+
 // MARK: - Word Image Model
 
 struct WordImageResponseModel: Codable {

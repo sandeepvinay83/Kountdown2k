@@ -91,6 +91,16 @@ final class HomeViewController: UIViewController {
             destinationViewController.wordImageArray = self.loadWordImageData(messageModel: &messageModel, alertButtonTitleModel: &alertButtonTitleModel)
             destinationViewController.messageModel = messageModel
             destinationViewController.alertButtonTitleModel = alertButtonTitleModel
+        } else if segue.identifier == Constants.kSegueKey.eShowSubtraction.rawValue {
+            guard let destinationViewController = segue.destination as? SubtractionViewController else {
+                return
+            }
+//            destinationViewController.additionArray = self.loadAdditionData()
+            var messageModel: MessageModel?
+            var alertButtonTitleModel: AlertButtonModel?
+            destinationViewController.subtractionArray = self.loadSubtractionData(messageModel: &messageModel, alertButtonTitleModel: &alertButtonTitleModel)
+            destinationViewController.messageModel = messageModel
+            destinationViewController.alertButtonTitleModel = alertButtonTitleModel
         }
     }
     
@@ -319,6 +329,43 @@ final class HomeViewController: UIViewController {
             return wordImageModel.wordImageArray
         }
     }
+    
+    private func loadSubtractionData(messageModel: inout MessageModel?, alertButtonTitleModel: inout AlertButtonModel?) -> [ClassifyModel]? {
+        let kindergartenWebservice = KindergartenWebservice()
+        if LocalStorageManager.shared.selectedLanguage == Constants.kLanguageKey.eEnglish.rawValue {
+            kindergartenWebservice.subtractionApi_English()
+            guard let subtractionModel: SubtractionResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .SubtractionJson_English) else {
+                return nil
+            }
+            messageModel = MessageModel()
+            messageModel?.success = subtractionModel.message?.success
+            messageModel?.fail = subtractionModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_English.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_English.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_English.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_English.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_English.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_English.ePrevious.rawValue
+            return subtractionModel.subtractionArray
+        } else {
+            kindergartenWebservice.subtractionApi_Spanish()
+            guard let subtractionModel: SubtractionResponseModel = LocalStorageManager.shared.readFromLocalStorage(fileName: .SubtractionJson_Spanish) else {
+                return nil
+            }
+            messageModel = MessageModel()
+            messageModel?.success = subtractionModel.message?.success
+            messageModel?.fail = subtractionModel.message?.fail
+            alertButtonTitleModel = AlertButtonModel()
+            alertButtonTitleModel?.yes = Constants.kAlertButtonTitleKey_Spanish.eYes.rawValue
+            alertButtonTitleModel?.no = Constants.kAlertButtonTitleKey_Spanish.eNo.rawValue
+            alertButtonTitleModel?.ok = Constants.kAlertButtonTitleKey_Spanish.eOk.rawValue
+            alertButtonTitleModel?.next = Constants.kAlertButtonTitleKey_Spanish.eNext.rawValue
+            alertButtonTitleModel?.finish = Constants.kAlertButtonTitleKey_Spanish.eFinish.rawValue
+            alertButtonTitleModel?.previous = Constants.kAlertButtonTitleKey_Spanish.ePrevious.rawValue
+            return subtractionModel.subtractionArray
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -373,6 +420,8 @@ extension HomeViewController: UITableViewDelegate {
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowCountSets.rawValue, sender: nil)
             case 6:
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowAddition.rawValue, sender: nil)
+            case 7:
+                self.performSegue(withIdentifier: Constants.kSegueKey.eShowSubtraction.rawValue, sender: nil)
             default:
                 print("Cell not defined")
             }

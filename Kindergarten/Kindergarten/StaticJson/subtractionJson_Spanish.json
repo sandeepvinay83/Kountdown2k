@@ -1,0 +1,152 @@
+{
+    "Subtraction": [
+      {
+        "title": "7 - 2 =",
+        "header": "Responde la resta de los siguientes dos números.",
+        "options": [
+          {
+            "title":"5",
+            "answer": "1"
+          },
+          {
+            "title": "4",
+            "answer": "0"
+          },
+          {
+            "title":"3",
+            "answer": "0"
+          }
+        ]
+      },
+      {
+        "title": "8 - 0 =",
+        "header": "Responde la resta de los siguientes dos números.",
+        "options": [
+          {
+            "title":"10",
+            "answer": "0"
+          },
+          {
+            "title": "7",
+            "answer": "0"
+          },
+          {
+            "title":"8",
+            "answer": "1"
+          }
+        ]
+      },
+      {
+        "title": "5 - 1 =",
+        "header": "Responde la resta de los siguientes dos números.",
+        "options": [
+          {
+            "title":"3",
+            "answer": "0"
+          },
+          {
+            "title": "4",
+            "answer": "1"
+          },
+          {
+            "title":"5",
+            "answer": "0"
+          }
+        ]
+      },
+      {
+        "title": "9 - 7 =",
+        "header": "Responde la resta de los siguientes dos números.",
+        "options": [
+          {
+            "title":"3",
+            "answer": "0"
+          },
+          {
+            "title": "2",
+            "answer": "1"
+          },
+          {
+            "title":"6",
+            "answer": "0"
+          }
+        ]
+      },
+      {
+        "title": "12 - 9 =",
+        "header": "Responde la resta de los siguientes dos números.",
+        "options": [
+          {
+            "title":"11",
+            "answer": "0"
+          },
+          {
+            "title": "10",
+            "answer": "0"
+          },
+          {
+            "title":"3",
+            "answer": "1"
+          }
+        ]
+      },
+      {
+        "title": "4 - 2 =",
+        "header": "Responde la resta de los siguientes dos números.",
+        "options": [
+          {
+            "title":"2",
+            "answer": "1"
+          },
+          {
+            "title": "5",
+            "answer": "0"
+          },
+          {
+            "title":"3",
+            "answer": "0"
+          }
+        ]
+      },
+      {
+        "title": "10 - 4 =",
+        "header": "Responde la resta de los siguientes dos números.",
+        "options": [
+          {
+            "title":"5",
+            "answer": "0"
+          },
+          {
+            "title": "7",
+            "answer": "0"
+          },
+          {
+            "title":"6",
+            "answer": "1"
+          }
+        ]
+      },
+      {
+        "title": "2 - 1 =",
+        "header": "Responde la resta de los siguientes dos números.",
+        "options": [
+          {
+            "title":"0",
+            "answer": "0"
+          },
+          {
+            "title": "1",
+            "answer": "1"
+          },
+          {
+            "title":"2",
+            "answer": "0"
+          }
+        ]
+      }
+    ],
+    "Message": {
+      "success": "¡Impresionante! Lo hiciste. ¿Quieres jugar de nuevo?",
+      "fail": "Seleccionaste la respuesta incorrecta. ¡Intentar otra vez!"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "Subtraction": [
+    {
+      "title": "7 - 2 =",
+      "header": "Answer the subtraction of below two numbers",
+      "options": [
+        {
+          "title":"5",
+          "answer": "1"
+        },
+        {
+          "title": "4",
+          "answer": "0"
+        },
+        {
+          "title":"3",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "8 - 0 =",
+      "header": "Answer the subtraction of below two numbers",
+      "options": [
+        {
+          "title":"10",
+          "answer": "0"
+        },
+        {
+          "title": "7",
+          "answer": "0"
+        },
+        {
+          "title":"8",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "5 - 1 =",
+      "header": "Answer the subtraction of below two numbers",
+      "options": [
+        {
+          "title":"3",
+          "answer": "0"
+        },
+        {
+          "title": "4",
+          "answer": "1"
+        },
+        {
+          "title":"5",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "9 - 7 =",
+      "header": "Answer the subtraction of below two numbers",
+      "options": [
+        {
+          "title":"3",
+          "answer": "0"
+        },
+        {
+          "title": "2",
+          "answer": "1"
+        },
+        {
+          "title":"6",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "12 - 9 =",
+      "header": "Answer the subtraction of below two numbers",
+      "options": [
+        {
+          "title":"11",
+          "answer": "0"
+        },
+        {
+          "title": "10",
+          "answer": "0"
+        },
+        {
+          "title":"3",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "4 - 2 =",
+      "header": "Answer the subtraction of below two numbers",
+      "options": [
+        {
+          "title":"2",
+          "answer": "1"
+        },
+        {
+          "title": "5",
+          "answer": "0"
+        },
+        {
+          "title":"3",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "title": "10 - 4 =",
+      "header": "Answer the subtraction of below two numbers",
+      "options": [
+        {
+          "title":"5",
+          "answer": "0"
+        },
+        {
+          "title": "7",
+          "answer": "0"
+        },
+        {
+          "title":"6",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "title": "2 - 1 =",
+      "header": "Answer the subtraction of below two numbers",
+      "options": [
+        {
+          "title":"0",
+          "answer": "0"
+        },
+        {
+          "title": "1",
+          "answer": "1"
+        },
+        {
+          "title":"2",
+          "answer": "0"
+        }
+      ]
+    }
+  ],
+  "Message": {
+      "success": "Awesome! You did it. Do you want to play again?",
+      "fail": "You selected wrong answer. Try again!"
+  }
+}

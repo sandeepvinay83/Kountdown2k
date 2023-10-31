@@ -161,6 +161,28 @@ final class KindergartenWebservice {
         LocalStorageManager.shared.saveToLocalStorage(fileName: .AdditionJson_Spanish, responseObject: additionModel)
     }
     
+    // MARK: - Subtraction
+    
+    /// subtraction json response will be in english language
+    func subtractionApi_English() {
+        let networkService = Networking()
+        guard let subtractionModel: SubtractionResponseModel = networkService.loadJson(filename: FileName.SubtractionJson_English.rawValue) else {
+            print("Could not read SubtractionJson_English json")
+            return
+        }
+        LocalStorageManager.shared.saveToLocalStorage(fileName: .SubtractionJson_English, responseObject: subtractionModel)
+    }
+    
+    /// subtraction json response will be in spanish language
+    func subtractionApi_Spanish() {
+        let networkService = Networking()
+        guard let subtractionModel: SubtractionResponseModel = networkService.loadJson(filename: FileName.SubtractionJson_Spanish.rawValue) else {
+            print("Could not read SubtractionJson_Spanish json")
+            return
+        }
+        LocalStorageManager.shared.saveToLocalStorage(fileName: .SubtractionJson_Spanish, responseObject: subtractionModel)
+    }
+    
     // MARK: - Word Image
     
     /// word image json response will be in english language
