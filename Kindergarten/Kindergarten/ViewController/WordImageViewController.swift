@@ -76,10 +76,10 @@ class WordImageViewController: UIViewController {
     
     private func updateUI() {
         self.headerLabel.text = self.wordImageArray?[self.currentArrayIndex].header
-        if let additionArray = self.wordImageArray {
+        if let wordImageArray = self.wordImageArray {
             if self.currentArrayIndex == 0 {
                 self.previousButton.isUserInteractionEnabled = false
-            } else if self.currentArrayIndex == (additionArray.count - 1) {
+            } else if self.currentArrayIndex == (wordImageArray.count - 1) {
                 self.nextButton.isUserInteractionEnabled = false
                 self.nextButton.setTitle(self.alertButtonTitleModel?.finish, for: .normal)
             } else {
@@ -95,9 +95,6 @@ class WordImageViewController: UIViewController {
             
             let secondButtonTitle = self.wordImageArray?[self.currentArrayIndex].options[1].title
             self.secondButton.setTitle(secondButtonTitle, for: .normal)
-            
-//            let thirdButtonTitle = self.wordImageArray?[self.currentArrayIndex].options[2].title
-//            self.thirdButton.setTitle(thirdButtonTitle, for: .normal)
         }
     }
     
