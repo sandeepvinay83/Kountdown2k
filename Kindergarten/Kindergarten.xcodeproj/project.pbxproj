@@ -41,6 +41,8 @@
 		C1A8FC812AAF7418002940F6 /* ClassifyItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A8FC802AAF7418002940F6 /* ClassifyItemViewController.swift */; };
 		C1AFE6DF2AA7442F00E28B87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AFE6DE2AA7442F00E28B87 /* HomeViewController.swift */; };
 		C1AFE6E12AA7443F00E28B87 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AFE6E02AA7443F00E28B87 /* HomeView.swift */; };
+		C1B6ED8C2AF53434003CE95D /* NumberCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6ED8B2AF53434003CE95D /* NumberCountViewController.swift */; };
+		C1B6ED8E2AF535F3003CE95D /* NumberCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B6ED8D2AF535F3003CE95D /* NumberCountCell.swift */; };
 		C1BE5E902AAB918300B18473 /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E8F2AAB918300B18473 /* LocalStorageManager.swift */; };
 		C1BE5E962AAB966F00B18473 /* KindergartenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E952AAB966F00B18473 /* KindergartenModel.swift */; };
 		C1BE5E992AAB99F000B18473 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BE5E982AAB99F000B18473 /* Networking.swift */; };
@@ -95,6 +97,8 @@
 		C1A8FC802AAF7418002940F6 /* ClassifyItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifyItemViewController.swift; sourceTree = "<group>"; };
 		C1AFE6DE2AA7442F00E28B87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C1AFE6E02AA7443F00E28B87 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C1B6ED8B2AF53434003CE95D /* NumberCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCountViewController.swift; sourceTree = "<group>"; };
+		C1B6ED8D2AF535F3003CE95D /* NumberCountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCountCell.swift; sourceTree = "<group>"; };
 		C1BE5E8F2AAB918300B18473 /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
 		C1BE5E952AAB966F00B18473 /* KindergartenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindergartenModel.swift; sourceTree = "<group>"; };
 		C1BE5E982AAB99F000B18473 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
@@ -189,6 +193,7 @@
 				C1E98A002ABEF1D9001F9B69 /* ProfileViewController.swift */,
 				C14471B72ACDE3630002CFEA /* SpeakSentenceViewController.swift */,
 				C10BF15C2AEFE0AC003617CC /* WordImageViewController.swift */,
+				C1B6ED8B2AF53434003CE95D /* NumberCountViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				C18356872AB0DEF800A0BD7E /* ClassifyItemCell.swift */,
+				C1B6ED8D2AF535F3003CE95D /* NumberCountCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -382,8 +388,10 @@
 				C1FA8B492AB4828C0068272E /* BasicColorsViewController.swift in Sources */,
 				C1FA8B4F2AB4E1E50068272E /* IdentifyShapeViewController.swift in Sources */,
 				C1E3E77B2AB1ABA1005EE9C0 /* AlertView.swift in Sources */,
+				C1B6ED8C2AF53434003CE95D /* NumberCountViewController.swift in Sources */,
 				C1E98A012ABEF1D9001F9B69 /* ProfileViewController.swift in Sources */,
 				C1A8FC812AAF7418002940F6 /* ClassifyItemViewController.swift in Sources */,
+				C1B6ED8E2AF535F3003CE95D /* NumberCountCell.swift in Sources */,
 				C11C2FC02AADBBF800F72733 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

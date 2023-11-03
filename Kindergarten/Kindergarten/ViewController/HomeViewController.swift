@@ -416,6 +416,8 @@ extension HomeViewController: UITableViewDelegate {
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowBasicColors.rawValue, sender: nil)
             case 3:
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowIdentifyShape.rawValue, sender: nil)
+            case 4:
+                self.performSegue(withIdentifier: Constants.kSegueKey.eShowNumberCount.rawValue, sender: nil)
             case 5:
                 self.performSegue(withIdentifier: Constants.kSegueKey.eShowCountSets.rawValue, sender: nil)
             case 6:

@@ -34,6 +34,7 @@ class Constants {
         case eShowSignup = "showSignup"
         case eShowProfile = "showProfile"
         case eShowWordImage = "showWordImage"
+        case eShowNumberCount = "showNumberCount"
     }
     
     // Alert button title English

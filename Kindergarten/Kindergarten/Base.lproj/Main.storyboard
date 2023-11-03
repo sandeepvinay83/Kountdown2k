@@ -95,6 +95,7 @@
                         <segue destination="wY1-RT-oeq" kind="show" identifier="showSpeak" id="oeO-q0-wbY"/>
                         <segue destination="6A9-sU-joI" kind="show" identifier="showWordImage" id="GVj-xU-dbH"/>
                         <segue destination="a3k-1N-pyY" kind="show" identifier="showSubtraction" id="4Lw-me-nkc"/>
+                        <segue destination="UsQ-Se-EHk" kind="show" identifier="showNumberCount" id="bZc-Cb-Pxt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1605,6 +1606,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ks7-GO-SgM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1454" y="737"/>
+        </scene>
+        <!--Number Count View Controller-->
+        <scene sceneID="E0j-iD-frj">
+            <objects>
+                <viewController id="UsQ-Se-EHk" customClass="NumberCountViewController" customModule="Kindergarten" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4sk-v3-het">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hKN-mS-PMv">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NumberCountCell" rowHeight="200" id="kC7-D2-85Z" customClass="NumberCountCell" customModule="Kindergarten" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kC7-D2-85Z" id="Cj5-Qd-RYz">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cLd-WS-lIW">
+                                                    <rect key="frame" x="136.66666666666666" y="70" width="119.99999999999997" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="cLd-WS-lIW" secondAttribute="height" multiplier="1:1" id="N5i-ON-rV9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByL-ob-Xpo">
+                                                    <rect key="frame" x="10" y="10" width="373" height="50"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ByL-ob-Xpo" secondAttribute="trailing" constant="10" id="2Pv-zT-RfH"/>
+                                                <constraint firstAttribute="bottom" secondItem="cLd-WS-lIW" secondAttribute="bottom" constant="10" id="42T-uo-ro1"/>
+                                                <constraint firstItem="cLd-WS-lIW" firstAttribute="centerX" secondItem="Cj5-Qd-RYz" secondAttribute="centerX" id="BQn-aQ-Mca"/>
+                                                <constraint firstItem="ByL-ob-Xpo" firstAttribute="top" secondItem="Cj5-Qd-RYz" secondAttribute="top" constant="10" id="Cfl-sb-EIX"/>
+                                                <constraint firstItem="cLd-WS-lIW" firstAttribute="top" secondItem="ByL-ob-Xpo" secondAttribute="bottom" constant="10" id="Nca-S0-Za5"/>
+                                                <constraint firstItem="cLd-WS-lIW" firstAttribute="height" secondItem="Cj5-Qd-RYz" secondAttribute="height" multiplier="0.6" id="eGw-tw-YD9"/>
+                                                <constraint firstItem="ByL-ob-Xpo" firstAttribute="leading" secondItem="Cj5-Qd-RYz" secondAttribute="leading" constant="10" id="hED-O1-zxV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="itemImageView" destination="cLd-WS-lIW" id="71N-RX-ioR"/>
+                                            <outlet property="titleLabel" destination="ByL-ob-Xpo" id="SZO-IR-XNf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="UsQ-Se-EHk" id="dv1-Lu-tSS"/>
+                                    <outlet property="delegate" destination="UsQ-Se-EHk" id="v1F-6V-mwn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="haC-sc-6Nt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="haC-sc-6Nt" firstAttribute="bottom" secondItem="hKN-mS-PMv" secondAttribute="bottom" id="Cke-Od-mO9"/>
+                            <constraint firstItem="haC-sc-6Nt" firstAttribute="trailing" secondItem="hKN-mS-PMv" secondAttribute="trailing" id="puz-u9-tl5"/>
+                            <constraint firstItem="hKN-mS-PMv" firstAttribute="top" secondItem="haC-sc-6Nt" secondAttribute="top" id="vDp-9Y-OAO"/>
+                            <constraint firstItem="hKN-mS-PMv" firstAttribute="leading" secondItem="haC-sc-6Nt" secondAttribute="leading" id="xUg-UA-wou"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" style="editor" id="8Ij-Xk-eOs"/>
+                    <connections>
+                        <outlet property="numberCountTableView" destination="hKN-mS-PMv" id="ZOH-3m-Yoa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wt-Xl-lfH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2608" y="-202"/>
         </scene>
     </scenes>
     <resources>
